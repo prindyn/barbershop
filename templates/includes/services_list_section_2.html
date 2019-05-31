@@ -1,0 +1,95 @@
+{% load static %}
+<section class="section novi-background section-xl bg-periglacial-blue text-center"
+         data-preset='{"title":"Services 1","category":"content","reload":false,"id":"services-1"}'>
+    <div class="shell">
+        <h2>NASZE USŁUGI</h2>
+        <div class="p text-width-medium">
+            <p class="big">Barbershop oferuje światowej klasy fryzury dla mężczyzn, pielęgnację brody i golenie
+                na gorąco. Oto tylko niektóre z usług, z których jesteśmy znani.</p>
+        </div>
+        <article class="box-service box-service-dark box-service-reverse">
+            <div class="box-service-left"><img class="box-service-image"
+                                               src="{% static 'images/services-1-500x490.png' %}" alt=""
+                                               width="500" height="490"/>
+            </div>
+            <div class="box-service-body">
+                <div class="box-service-header">
+                    <p class="box-service-title">TRADYCYJNE STRZYZENIE WŁOSÓW</p>
+                    <p class="box-service-price">
+                        <small>$</small>
+                        39.
+                        <small>00</small>
+                    </p>
+                </div>
+                <div class="box-service-text">
+                    <p>Ta klasyczna i tradycyjna usługa jest idealna, jeśli chcesz, aby Twoje włosy zostały wykonane we
+                        właściwy sposób. Nasi fryzjerzy chętnie Ci w tym pomogą. </p>
+                </div>
+                <a class="btn btn-sm box-service-control" href="{% url 'choose_barber' %}">Rezerwuj teraz</a>
+            </div>
+        </article>
+        <article class="box-service">
+            <div class="box-service-left"><img class="box-service-image"
+                                               src="{% static 'images/services-2-500x490.png' %}" alt=""
+                                               width="500" height="490"/>
+            </div>
+            <div class="box-service-body">
+                <div class="box-service-header">
+                    <p class="box-service-title">GOLENIE</p>
+                    <p class="box-service-price">
+                        <small>$</small>
+                        29.
+                        <small>00</small>
+                    </p>
+                </div>
+                <div class="box-service-text">
+                    <p>Golenie brody to jedna z naszych najpopularniejszych usług. Jest koniecznością dla wszystkich
+                        mężczyzn, którzy chcą mieć brodę, która wygląda oszałamiająco.</p>
+                </div>
+                <a class="btn btn-sm box-service-control" href="{% url 'choose_barber' %}">Rezerwuj teraz</a>
+            </div>
+        </article>
+        <article class="box-service box-service-dark box-service-reverse">
+            <div class="box-service-left"><img class="box-service-image"
+                                               src="{% static 'images/services-3-500x490.png' %}" alt=""
+                                               width="500" height="490"/>
+            </div>
+            <div class="box-service-body">
+                <div class="box-service-header">
+                    <p class="box-service-title">Przycinanie brody</p>
+                    <p class="box-service-price">
+                        <small>$</small>
+                        32.
+                        <small>00</small>
+                    </p>
+                </div>
+                <div class="box-service-text">
+                    <p>Wąsy są klasycznym wyborem włosów dla mężczyzn i nigdy nie wydają się wychodzić z mody na długo.
+                        Z nami możesz utrzymywać wąsy w czystości.</p>
+                </div>
+                <a class="btn btn-sm box-service-control" href="{% url 'choose_barber' %}">Rezerwuj teraz</a>
+            </div>
+        </article>
+        <article class="box-service">
+            <div class="box-service-left"><img class="box-service-image"
+                                               src="{% static 'images/services-4-500x490.png' %}" alt=""
+                                               width="500" height="490"/>
+            </div>
+            <div class="box-service-body">
+                <div class="box-service-header">
+                    <p class="box-service-title">Przycinanie wąsów</p>
+                    <p class="box-service-price">
+                        <small>$</small>
+                        35.
+                        <small>00</small>
+                    </p>
+                </div>
+                <div class="box-service-text">
+                    <p>Dzisiaj brody wymagają więcej krawiectwa niż w poprzednich dniach. Dlatego uważamy, że nasza
+                        usługa przycinania brody może być przydatna.</p>
+                </div>
+                <a class="btn btn-sm box-service-control" href="{% url 'choose_barber' %}">Rezerwuj teraz</a>
+            </div>
+        </article>
+    </div>
+</section>
