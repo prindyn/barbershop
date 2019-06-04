@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
 
 {% load static %}
+{% load index %}
 
 {% block title %}Zakończenie rezerwacji - {{ block.super }}{% endblock %}
 
 {% block header %}
 
     <div class="page-header page-header-perspective">
-        <div class="page-header-left"><a class="brand" href="index.html"><img
+        <div class="page-header-left"><a class="brand" href="{% url 'home' %}"><img
                 src="{% static 'images/logo-default-199x36.png' %}" alt="" width="199" height="36"/></a></div>
         <div class="page-header-center">
             <div class="step-progress">
@@ -42,15 +43,15 @@
                 <div class="box-contacts-col">
                     <div class="box-contacts-block">
                         <h3>Serwis:</h3>
-                        <p>TRADYCYJNE STRZYZENIE WŁOSÓW</p>
+                        <p>{{ reservation.service }}</p>
                     </div>
                     <div class="box-contacts-block">
                         <h3>Fryzjer:</h3>
-                        <p>Matthew Phillips</p>
+                        <p>{{ reservation.barber }}</p>
                     </div>
                     <div class="box-contacts-block">
                         <h3>Data:</h3>
-                        <p>Listopad 12 (12:00 - 13:00)</p>
+                        <p>{{ reservation.month }} {{ reservation.day }} ({{ reservation.time|time:"H:i" }} - {{ reservation.time|increase:1|time:"H:i" }})</p>
                     </div>
                 </div>
                 <div class="box-contacts-col box-contacts-right">

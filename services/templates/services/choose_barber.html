@@ -7,7 +7,7 @@
 {% block header %}
 
     <div class="page-header page-header-perspective">
-        <div class="page-header-left"><a class="brand" href="index.html"><img
+        <div class="page-header-left"><a class="brand" href="{% url 'home' %}"><img
                 src="{% static 'images/logo-default-199x36.png' %}" alt="" width="199" height="36"/></a></div>
         <div class="page-header-center">
             <div class="step-progress">
@@ -39,116 +39,43 @@
         <div class="shell">
             <h2>WYBIERZ fryzjera</h2>
             <div class="p text-width-medium">
-                <p class="big">Barbershop oferuje profesjonalne usługi certyfikowanych fryzjerów z wieloletnim doświadczeniem. Na tej stronie możesz wybrać preferowanego fryzjera za pomocą kilku kliknięć.</p>
+                <p class="big">Barbershop oferuje profesjonalne usługi certyfikowanych fryzjerów z wieloletnim
+                    doświadczeniem. Na tej stronie możesz wybrać preferowanego fryzjera za pomocą kilku kliknięć.</p>
             </div>
             <div class="range range-lg-center">
                 <div class="cell-lg-10">
                     <div class="range range-sm-center range-md-left range-30">
-                        <div class="cell-sm-8 cell-md-6">
-                            <div class="thumbnail-option">
-                                <div class="thumbnail-option-left"><img src="{% static 'images/team-1-170x180.jpg' %}" alt=""
-                                                                        width="170" height="180"/>
-                                </div>
-                                <div class="thumbnail-option-body">
-                                    <div class="thumbnail-option-title">Simon wilson</div>
-                                    <ul class="thumbnail-option-list">
-                                        <li>mo</li>
-                                        <li class="active">tu</li>
-                                        <li class="active">we</li>
-                                        <li>th</li>
-                                        <li class="active">fr</li>
-                                        <li>st</li>
-                                        <li>sn</li>
-                                    </ul>
-                                    <div class="thumbnail-option-panel"><a class="btn btn-xs btn-primary btn-circle"
-                                                                           href="{% url 'choose_date' %}">Wybierz</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell-sm-8 cell-md-6">
-                            <div class="thumbnail-option">
-                                <div class="thumbnail-option-left"><img src="{% static 'images/team-2-170x180.jpg' %}" alt=""
-                                                                        width="170" height="180"/>
-                                </div>
-                                <div class="thumbnail-option-body">
-                                    <div class="thumbnail-option-title">Matthew Phillips</div>
-                                    <ul class="thumbnail-option-list">
-                                        <li>mo</li>
-                                        <li class="active">tu</li>
-                                        <li class="active">we</li>
-                                        <li>th</li>
-                                        <li class="active">fr</li>
-                                        <li>st</li>
-                                        <li>sn</li>
-                                    </ul>
-                                    <div class="thumbnail-option-panel"><a class="btn btn-xs btn-primary btn-circle"
-                                                                           href="{% url 'choose_date' %}">Wybierz</a></div>
+
+                        {% for barber in barbers %}
+
+                            <div class="cell-sm-8 cell-md-6">
+                                <div class="thumbnail-option">
+                                    <div class="thumbnail-option-left"><img
+                                            src="{% static barber.small_img|cut:"static/" %}"
+                                            alt=""
+                                            width="170" height="180"/>
+                                    </div>
+                                    <div class="thumbnail-option-body">
+                                        <div class="thumbnail-option-title">{{ barber.full_name }}</div>
+                                        <ul class="thumbnail-option-list">
+                                            {% for day in barber.barberdayssetting_set.all %}
+                                                <li {% if day.status > 0 %}class="active" {% endif %}>{{ day.shortcut }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                        <div class="thumbnail-option-panel">
+                                            <form action="{% url 'choose_date' %}" method="post">
+                                                {% csrf_token %}
+                                                <input type="hidden" name="barber_id" value="{{ barber.id }}">
+                                                <input type="submit" class="btn btn-xs btn-primary btn-circle"
+                                                       value="Wybierz">
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="cell-sm-8 cell-md-6">
-                            <div class="thumbnail-option">
-                                <div class="thumbnail-option-left"><img src="{%  static 'images/team-3-170x180.jpg' %}" alt=""
-                                                                        width="170" height="180"/>
-                                </div>
-                                <div class="thumbnail-option-body">
-                                    <div class="thumbnail-option-title">harry anderson</div>
-                                    <ul class="thumbnail-option-list">
-                                        <li>mo</li>
-                                        <li class="active">tu</li>
-                                        <li class="active">we</li>
-                                        <li>th</li>
-                                        <li class="active">fr</li>
-                                        <li>st</li>
-                                        <li>sn</li>
-                                    </ul>
-                                    <div class="thumbnail-option-panel"><a class="btn btn-xs btn-primary btn-circle"
-                                                                           href="{% url 'choose_date' %}">Wybierz</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell-sm-8 cell-md-6">
-                            <div class="thumbnail-option">
-                                <div class="thumbnail-option-left"><img src="{% static 'images/team-1-170x180.jpg' %}" alt=""
-                                                                        width="170" height="180"/>
-                                </div>
-                                <div class="thumbnail-option-body">
-                                    <div class="thumbnail-option-title">James Young</div>
-                                    <ul class="thumbnail-option-list">
-                                        <li>mo</li>
-                                        <li class="active">tu</li>
-                                        <li class="active">we</li>
-                                        <li>th</li>
-                                        <li class="active">fr</li>
-                                        <li>st</li>
-                                        <li>sn</li>
-                                    </ul>
-                                    <div class="thumbnail-option-panel"><a class="btn btn-xs btn-primary btn-circle"
-                                                                           href="{% url 'choose_date' %}">Wybierz</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cell-sm-8 cell-md-6">
-                            <div class="thumbnail-option">
-                                <div class="thumbnail-option-left"><img src="{% static 'images/team-2-170x180.jpg' %}" alt=""
-                                                                        width="170" height="180"/>
-                                </div>
-                                <div class="thumbnail-option-body">
-                                    <div class="thumbnail-option-title">Scott Russell</div>
-                                    <ul class="thumbnail-option-list">
-                                        <li>mo</li>
-                                        <li class="active">tu</li>
-                                        <li class="active">we</li>
-                                        <li>th</li>
-                                        <li class="active">fr</li>
-                                        <li>st</li>
-                                        <li>sn</li>
-                                    </ul>
-                                    <div class="thumbnail-option-panel"><a class="btn btn-xs btn-primary btn-circle"
-                                                                           href="{% url 'choose_date' %}">Wybierz</a></div>
-                                </div>
-                            </div>
-                        </div>
+
+                        {% endfor %}
+
                     </div>
                 </div>
             </div>
