@@ -1,0 +1,122 @@
+{% extends 'frontend/base.html' %}
+
+{% load static %}
+
+{% block title %}Wybierz service - {{ block.super }}{% endblock %}
+
+{% block header %}
+
+    <div class="page-header page-header-perspective">
+        <div class="page-header-left"><a class="brand" href="{% url 'home' %}"><img
+                src="{% static 'images/logo-default-199x36.png' %}"
+                alt="" width="199" height="36"/></a>
+        </div>
+        <div class="page-header-center">
+            <div class="step-progress">
+                <div class="step-progress-top"><span class="step-progress-number">1</span><span>z</span><span
+                        class="step-progress-number">4</span></div>
+                <div class="step-progress-bottom">
+                    <p class="step-progress-text">Krokow</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-header-right">
+            <div id="perspective-open-menu" data-custom-toggle=".perspective-menu-toggle"
+                 data-custom-toggle-hide-on-blur="true"><span class="perspective-menu-text">Menu</span>
+                <button class="perspective-menu-toggle"><span></span></button>
+            </div>
+        </div>
+    </div>
+    <div class="custom-progress">
+        <div class="custom-progress-body" style="width: 0;"></div>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+
+    <section class="section novi-background section-xl bg-periglacial-blue one-screen-page-content text-center"
+             data-preset='{"title":"Booking Step 1","category":"booking","reload":false,"id":"booking-step-1"}'>
+        <div class="shell">
+            <h2>WYBIERZ SERWIS</h2>
+            <div class="p text-width-medium">
+                <p class="big">Na tej stronie możesz wybrać potrzebną usługę. Tutaj prezentowane są tylko
+                    najpopularniejsze usługi fryzjerskie, które świadczymy. Jeśli potrzebujesz spersonalizowanej usługi
+                    fryzjerskiej, skontaktuj się z nami.</p>
+            </div>
+            <div class="range range-50">
+                <div class="cell-xs-6 cell-md-3">
+                    <article class="card-service-option"><img class="card-service-option-image"
+                                                              src="{% static 'images/icon-service-1-70x62.png' %}"
+                                                              alt="" width="70"
+                                                              height="62"/>
+                        <p class="card-service-option-title">TRADYCYJNE STRZYZENIE WŁOSÓW</p>
+                        <div class="card-service-option-panel">
+                            <p class="card-service-option-text">Jedna z najpopularniejszych usług oferowanych przez
+                                naszych fryzjerów</p>
+                            <form action="{% url 'choose_barber' %}" method="post">
+
+                                {% csrf_token %}
+
+                                <input type="hidden" name="service_id" value="1">
+                                <input type="submit" class="btn btn-xs card-service-option-control" value="Wybierz">
+                            </form>
+                        </div>
+                    </article>
+                </div>
+                <div class="cell-xs-6 cell-md-3">
+                    <article class="card-service-option"><img class="card-service-option-image"
+                                                              src="{% static 'images/icon-service-2-70x62.png' %}"
+                                                              alt="" width="70"
+                                                              height="62"/>
+                        <p class="card-service-option-title">GOLENIE</p>
+                        <div class="card-service-option-panel">
+                            <p class="card-service-option-text">Nasze usługi golenia sprawią, że będziesz wyglądać
+                                naprawdę
+                                przystojnie</p>
+                            <form action="{% url 'choose_barber' %}" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="service_id" value="2">
+                                <input type="submit" class="btn btn-xs card-service-option-control" value="Wybierz">
+                            </form>
+                        </div>
+                    </article>
+                </div>
+                <div class="cell-xs-6 cell-md-3">
+                    <article class="card-service-option"><img class="card-service-option-image"
+                                                              src="{% static 'images/icon-service-3-70x62.png' %}"
+                                                              alt="" width="70"
+                                                              height="62"/>
+                        <p class="card-service-option-title">Wykończenie brody</p>
+                        <div class="card-service-option-panel">
+                            <p class="card-service-option-text">Dobrze przycięta broda jest niezbędnym elementem
+                                wizerunku każdego mężczyzny</p>
+                            <form action="{% url 'choose_barber' %}" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="service_id" value="3">
+                                <input type="submit" class="btn btn-xs card-service-option-control" value="Wybierz">
+                            </form>
+                        </div>
+                    </article>
+                </div>
+                <div class="cell-xs-6 cell-md-3">
+                    <article class="card-service-option"><img class="card-service-option-image"
+                                                              src="{% static 'images/icon-service-4-70x62.png' %}"
+                                                              alt="" width="70"
+                                                              height="62"/>
+                        <p class="card-service-option-title">Przycinanie wąsów</p>
+                        <div class="card-service-option-panel">
+                            <p class="card-service-option-text">Wąsy należy również regularnie przycinać</p>
+                            <form action="{% url 'choose_barber' %}" method="post">
+                                {% csrf_token %}
+                                <input type="hidden" name="service_id" value="4">
+                                <input type="submit" class="btn btn-xs card-service-option-control" value="Wybierz">
+                            </form>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

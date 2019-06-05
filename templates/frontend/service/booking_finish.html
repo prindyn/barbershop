@@ -1,0 +1,82 @@
+{% extends 'frontend/base.html' %}
+
+{% load static %}
+{% load index %}
+
+{% block title %}Zakończenie rezerwacji - {{ block.super }}{% endblock %}
+
+{% block header %}
+
+    <div class="page-header page-header-perspective">
+        <div class="page-header-left"><a class="brand" href="{% url 'home' %}"><img
+                src="{% static 'images/logo-default-199x36.png' %}" alt="" width="199" height="36"/></a></div>
+        <div class="page-header-center">
+            <div class="step-progress">
+                <p class="step-progress-caption">Prawie skończone</p>
+            </div>
+        </div>
+        <div class="page-header-right">
+            <div id="perspective-open-menu" data-custom-toggle=".perspective-menu-toggle"
+                 data-custom-toggle-hide-on-blur="true"><span class="perspective-menu-text">Menu</span>
+                <button class="perspective-menu-toggle"><span></span></button>
+            </div>
+        </div>
+    </div>
+    <div class="custom-progress">
+        <div class="custom-progress-body" style="width: 100%;"></div>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+
+    <section class="section novi-background section-xs bg-periglacial-blue one-screen-page-content text-center"
+             data-preset='{"title":"Booking Step 4","category":"booking, form","reload":true,"id":"booking-step-4"}'>
+        <div class="shell"><a class="link link-primary link-return" href="{% url 'choose_date' %}">Back</a></div>
+        <div class="shell">
+            <h2>JESZCZE JEDEN KROK!</h2>
+            <div class="p text-width-medium">
+                <p class="big">Aby zakończyć spotkanie, przejrzyj wszystkie szczegóły opisane poniżej. Nie zapomnij
+                    podać swojego imienia, telefonu i telefonu, abyśmy mogli się z Tobą skontaktować.</p>
+            </div>
+            <div class="box-contacts box-contacts-vertical box-contacts-vertical-small box-wrap-content-interactive block-centered">
+                <div class="box-contacts-col">
+                    <div class="box-contacts-block">
+                        <h3>Serwis:</h3>
+                        <p>{{ reservation.service }}</p>
+                    </div>
+                    <div class="box-contacts-block">
+                        <h3>Fryzjer:</h3>
+                        <p>{{ reservation.barber }}</p>
+                    </div>
+                    <div class="box-contacts-block">
+                        <h3>Data:</h3>
+                        <p>{{ reservation.month }} {{ reservation.day }} ({{ reservation.time|time:"H:i" }} - {{ reservation.time|increase:1|time:"H:i" }})</p>
+                    </div>
+                </div>
+                <div class="box-contacts-col box-contacts-right">
+                    <div class="box-contacts-block">
+                        <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact"
+                              method="post"
+                              action="https://livedemo00.template-help.com/wt_58888_v15/child/intense-barbershop/bat/rd-mailform.php"
+                              data-success-redirect="finish.html">
+                            <div class="form-group">
+                                <label class="form-label-outside" for="contact-full-name">Pełne imię i nazwisko</label>
+                                <input class="form-control" id="contact-full-name" type="text" name="name"
+                                       data-constraints="@Required">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label-outside" for="contact-phone">Telefon</label>
+                                <input class="form-control" id="contact-phone" type="text" name="phone"
+                                       data-constraints="@Required @Numeric">
+                            </div>
+                            <button class="btn btn-sm btn-primary btn-block btn-circle" type="submit">Rezerwuj teraz
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

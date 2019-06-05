@@ -1,0 +1,17 @@
+{% extends 'frontend/base.html' %}
+
+{% load static %}
+
+{% block title %}Service - {{ block.super }}{% endblock %}
+
+{% block content %}
+
+    {% block header_section %}
+
+        {{ block.super }}
+
+    {% endblock %}
+
+    {% include 'frontend/includes/service/services_list_section.html' %}
+
+{% endblock %}

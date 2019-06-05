@@ -1,0 +1,104 @@
+{% extends 'frontend/base.html' %}
+
+{% load static index %}
+
+{% block title %}Wybierz date - {{ block.super }}{% endblock %}
+
+{% block header %}
+
+    <div class="page-header page-header-perspective">
+        <div class="page-header-left"><a class="brand" href="{% url 'home' %}"><img
+                src="{% static 'images/logo-default-199x36.png' %}"
+                alt="" width="199" height="36"/></a></div>
+        <div class="page-header-center">
+            <div class="step-progress">
+                <div class="step-progress-top"><span class="step-progress-number">3</span><span>z</span><span
+                        class="step-progress-number">4</span></div>
+                <div class="step-progress-bottom">
+                    <p class="step-progress-text">Krokow</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-header-right">
+            <div id="perspective-open-menu" data-custom-toggle=".perspective-menu-toggle"
+                 data-custom-toggle-hide-on-blur="true"><span class="perspective-menu-text">Menu</span>
+                <button class="perspective-menu-toggle"><span></span></button>
+            </div>
+        </div>
+    </div>
+    <div class="custom-progress">
+        <div class="custom-progress-body" style="width: 66.66%;"></div>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+
+    <section class="section novi-background section-xs bg-periglacial-blue one-screen-page-content text-center"
+             data-preset='{"title":"Booking Step 3","category":"booking","reload":true,"id":"booking-step-3"}'>
+        <div class="shell"><a class="link link-primary link-return" href="{% url 'choose_barber' %}">Back</a></div>
+        <div class="shell">
+            <h2>Wybierz datę</h2>
+            <div class="p text-width-medium">
+                <p class="big">Aby zakończyć rezerwację, wybierz datę i godzinę, które najbardziej Ci odpowiadają. Z
+                    przyjemnością zaproponujemy najwyższej klasy usługi fryzjerskie w wybranym dniu.</p>
+            </div>
+            <h3>{{ calendar|first|index:"month" }}</h3>
+            <div class="rd-material-tabs date-picker" data-items="2" data-xs-items="3" data-sm-items="4"
+                 data-md-items="5" data-margin="15" data-stage-padding="0" data-sm-stage-padding="30">
+                <div class="rd-material-tabs__list">
+                    <ul>
+                        {% for day in calendar %}
+
+                            <li>
+                                <a class="date-picker-date {% for d in working_days %} {% if d.week_day_nr == day.week_day_nr %} {{ d.define_working_day }} {% endif %} {% endfor %}"
+                                   href="#">
+                                    <div class="date-picker-date-number">{{ day.month_day_nr }}</div>
+                                    <div class="date-picker-date-text">{{ day.title }}</div>
+                                </a>
+                            </li>
+
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="rd-material-tabs__container">
+
+                    {% for day in calendar %}
+
+                        <div>
+                            <ul class="date-picker-list animated fadeIn">
+
+                                {% for d in working_days %}
+
+                                    {% if d.week_day_nr == day.week_day_nr %}
+
+                                        {% for time in d.time_set.all %}
+
+                                            <form action="{% url 'booking_finish' %}" method="post">
+
+                                                {% csrf_token %}
+
+                                                <li class="{% if time.status == 0 %} disabled {% endif %} {{ d.define_working_day }}">
+                                                    <input type="hidden" name="time_id" value="{{ time.id }}">
+                                                    <input type="submit" value="{{ time.hour|time:"H:i" }} - {{ time.hour|increase:1|time:"H:i" }}">
+                                                </li>
+
+                                            </form>
+
+                                        {% endfor %}
+
+                                    {% endif %}
+
+                                {% endfor %}
+
+                            </ul>
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

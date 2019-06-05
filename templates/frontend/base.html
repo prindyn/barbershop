@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+    <title>{% block title %}Barbershop{% endblock %}</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <script src="{% static 'js/3ts2ksMwXvKRuG480KNifJ2_JNM.js' %}' %}"></script>
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300italic,400,700">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="page">
+    <main class="page-content" id="perspective">
+        <div class="content-wrapper">
+
+            {% block header %}
+
+                <div class="page-header page-header-perspective">
+                    <div class="page-header-left"><a class="brand" href="{% url 'home' %}"><img
+                            src="{% static 'images/logo-default-199x36.png' %}"
+                            alt="" width="199" height="36"/></a></div>
+                    <div class="page-header-right">
+                        <div class="booking-control"><a class="btn btn-xs btn-circle btn-primary" href="{% url 'choose_service' %}">Rezerwuj
+                            teraz</a>
+                        </div>
+                        <div id="perspective-open-menu" data-custom-toggle=".perspective-menu-toggle"
+                             data-custom-toggle-hide-on-blur="true"><span class="perspective-menu-text">Menu</span>
+                            <button class="perspective-menu-toggle"><span></span></button>
+                        </div>
+                    </div>
+                </div>
+
+            {% endblock %}
+
+            <div class="page-container" id="wrapper">
+
+                {% block content %}
+
+                    {% block header_section %}
+
+                        <section class="section novi-background page-title"
+                                 data-preset="{&quot;title&quot;:&quot;Page Title&quot;,&quot;category&quot;:&quot;content&quot;,&quot;reload&quot;:false,&quot;id&quot;:&quot;page-title&quot;}">
+                            <div class="page-title-content">
+                                <div class="shell">
+                                    <p class="page-title-header">{{ title }}</p>
+                                </div>
+                            </div>
+                        </section>
+
+                    {% endblock %}
+
+                {% endblock %}
+
+                <footer class="section novi-background page-footer page-footer-default"
+                        data-preset='{"title":"Footer 1","category":"footer","reload":false,"id":"footer-1"}'>
+                    <div class="shell">
+                        <div class="range range-xs-center">
+                            <div class="cell-lg-10"><a class="brand" href="{% url 'home' %}"><img
+                                    src="{% static 'images/logo-default-199x36.png' %}" alt="" width="199" height="36"/></a>
+                                <div class="text-highlighted-wrap">
+                                    <p class="text-highlighted">Barbershop to miejsce nr 1, w którym można znaleźć
+                                        fryzurę dla mężczy w Elku. Tutaj możesz uzyskać doświadczenie luksusowego
+                                        fryzjera za rozsądną cenę.</p>
+                                </div>
+                                <ul class="footer-navigation footer-navigation-horizontal">
+                                    <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                                    <li><a href="{% url 'about' %}">About</a></li>
+                                    <li><a href="{% url 'service' %}">Service</a></li>
+                                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                                    <li><a href="{% url 'shop' %}">Shop</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                </ul>
+                                <div class="divider divider-small divider-light block-centered"></div>
+                                <ul class="inline-list inline-list-md">
+                                    <li><a class="novi-icon icon icon-xs link-gray-light fa-facebook"
+                                           href="index.html#"></a></li>
+                                    <li><a class="novi-icon icon icon-xs link-gray-light fa-twitter"
+                                           href="index.html#"></a></li>
+                                    <li><a class="novi-icon icon icon-xs link-gray-light fa-youtube"
+                                           href="index.html#"></a></li>
+                                    <li><a class="novi-icon icon icon-xs link-gray-light fa-linkedin"
+                                           href="index.html#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <div id="perspective-content-overlay"></div>
+        </div>
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap"
+             data-preset='{"title":"Navigation","category":"navigation","reload":false,"id":"navigation"}'>
+            <nav class="rd-navbar rd-navbar-default" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+                 data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-sidebar"
+                 data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed"
+                 data-lg-layout="rd-navbar-sidebar" data-stick-up-clone="false">
+                <div class="rd-navbar-inner">
+                    <div class="rd-navbar-panel">
+                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span>
+                        </button>
+                        <div class="rd-navbar-brand"><a class="brand-name" href="{% url 'home' %}"><img
+                                src="{% static 'images/logo-default-199x36.png' %}" alt="" width="199" height="36"/></a>
+                        </div>
+                    </div>
+                    <div class="rd-navbar-nav-wrap">
+                        <div class="rd-navbar-nav-inner">
+                            <ul class="rd-navbar-nav">
+                                <li class="active"><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About</a></li>
+                                <li><a href="{% url 'service' %}">Service</a></li>
+                                <li><a href="{% url 'blog' %}">Blog</a></li>
+                                <li><a href="{% url 'shop' %}">Shop</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                            </ul>
+                            <div class="rd-navbar-nav-footer">
+                                <ul class="inline-list inline-list-md">
+                                    <li><a class="novi-icon icon icon-xs link-gray-base fa-facebook"
+                                           href="index.html#"></a></li>
+                                    <li><a class="novi-icon icon icon-xs link-gray-base fa-twitter"
+                                           href="index.html#"></a></li>
+                                    <li><a class="novi-icon icon icon-xs link-gray-base fa-youtube"
+                                           href="index.html#"></a></li>
+                                    <li><a class="novi-icon icon icon-xs link-gray-base fa-linkedin"
+                                           href="index.html#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </main>
+</div>
+<div class="modal fade text-center" id="modalWindow" role="dialog">
+    <div class="modal-dialog custom-modal-dialog">
+        <div class="custom-modal-content">
+            <button class="close" type="button" data-dismiss="modal"></button>
+            <div class="shell">
+                <div class="box-portfolio"><img class="box-portfolio-image"
+                                                src="{% static 'images/barbers-single-1-130x130.jpg' %}" alt=""
+                                                width="130" height="130"/>
+                    <p class="box-portfolio-header">simon wilson</p>
+                    <div class="box-portfolio-text">
+                        <p>Simon Wilson założył Barbershop w 2003 r. W wieku 23 lat. Postanowił stworzyć miejsce, w
+                            którym można uratować długoletnie tradycje amerykańskiego fryzjera. Utrzymywał zakład
+                            fryzjerski jako prawdziwe miejsce dla mężczyzn, ich ojców i synów, zamiast przekształcać go
+                            w salon dla kobiet i mężczyzn, jak w tamtym czasie był to popularny trend. W ciągu ostatnich
+                            13 lat Pan Wilson rozwinął swój sklep z małego, lokalnego miejsca do uznanego w kraju i na
+                            świecie standardu w branży. Simon otrzymał wiele nagród, w tym nagrodę HYPE dla
+                            przedsiębiorców oraz 40 Under Forty (klasa 2014) Hartford Business Journal. Można go znaleźć
+                            w sklepie w środy i piątki.</p>
+                    </div>
+                    <ul class="inline-list inline-list-md">
+                        <li><a class="novi-icon icon icon-xs link-gray-base fa-facebook" href="index.html#"></a></li>
+                        <li><a class="novi-icon icon icon-xs link-gray-base fa-twitter" href="index.html#"></a></li>
+                        <li><a class="novi-icon icon icon-xs link-gray-base fa-linkedin" href="index.html#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="snackbars" id="form-output-global"></div>
+<script src="{% static 'js/core.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

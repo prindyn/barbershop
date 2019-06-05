@@ -1,0 +1,19 @@
+{% extends 'frontend/base.html' %}
+
+{% load static %}
+
+{% block title %}About - {{ block.super }}{% endblock %}
+
+{% block content %}
+
+    {{ block.super }}
+
+    {% include 'frontend/includes/about/about_section.html' %}
+
+    {% include 'frontend/includes/about/reviews_section.html' %}
+
+    {% include 'frontend/includes/about/barbers_section.html' %}
+
+    {% include 'frontend/includes/about/faq_section.html' %}
+
+{% endblock %}

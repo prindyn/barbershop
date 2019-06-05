@@ -1,0 +1,52 @@
+{% extends 'frontend/base.html' %}
+
+{% load static %}
+
+{% block title %}{{ block.super }}{% endblock %}
+
+{% block header %}
+    <header class="page-header page-header-perspective page-header-perspective-transparent"
+            data-preset='{"title":"Header Default","category":"header","reload":false,"id":"header-default"}'>
+        <div class="page-header-left"><a class="brand" href="{% url 'home' %}">
+            <div class="brand-logo-default"><img src="{% static 'images/logo-default-199x36.png' %}" alt="" width="199"
+                                                 height="36"/>
+            </div>
+            <div class="brand-logo-white"><img src="{% static 'images/logo-white-200x36.png' %}" alt="" width="200"
+                                               height="36"/>
+            </div>
+        </a></div>
+        <div class="page-header-right">
+            <div class="booking-control"><a class="btn btn-xs btn-circle btn-primary" href="{% url 'choose_service' %}">Rezerwuj
+                teraz</a>
+            </div>
+            <div id="perspective-open-menu" data-custom-toggle=".perspective-menu-toggle"
+                 data-custom-toggle-hide-on-blur="true"><span class="perspective-menu-text">Menu</span>
+                <button class="perspective-menu-toggle"><span></span></button>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+{% block content %}
+
+    {% block header_section %}
+
+        {% include 'frontend/includes/home/home_header_section.html' %}
+
+    {% endblock %}
+
+    {% include 'frontend/includes/home/services_list_section.html' %}
+
+    {% include 'frontend/includes/home/about_section.html' %}
+
+    {% include 'frontend/includes/home/barbers_section.html' %}
+
+    {% include 'frontend/includes/home/services_section.html' %}
+
+    {% include 'frontend/includes/home/reviews_section.html' %}
+
+    {% include 'frontend/includes/home/blog_list_section.html' %}
+
+    {% include 'frontend/includes/home/map_section.html' %}
+
+{% endblock %}

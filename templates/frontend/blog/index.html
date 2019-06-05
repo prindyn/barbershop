@@ -1,0 +1,11 @@
+{% extends 'frontend/base.html' %}
+
+{% block title %}Blog - {{ block.super }}{% endblock %}
+
+{% block content %}
+
+    {{ block.super }}
+
+    {% include 'frontend/includes/blog/blog_list_section.html' %}
+
+{% endblock %}
