@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard | Apply - Bootstrap 4 Web Application</title>
+    <meta name="description" content="Responsive, Bootstrap, BS4">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+    <link rel="apple-touch-icon" href="{% static 'admin/images/logo.svg' %}">
+    <meta name="apple-mobile-web-app-title" content="Flatkit">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="shortcut icon" sizes="196x196" href="{% static 'admin/images/logo.svg' %}">
+    <link rel="stylesheet" href="{% static 'admin/libs/font-awesome/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'admin/css/app.min.css' %}">
+
+    {% block link %}{% endblock %}
+
+</head>
+<body class="pace-done fixed-content">
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+
+<div class="app" id="app">
+    <div id="aside" class="app-aside fade box-shadow-x nav-expand white dark" aria-hidden="true">
+
+        {% include 'backend/includes/layouts/side_menu_section_1.html' %}
+
+    </div>
+    <div id="content" class="app-content box-shadow-1 box-radius-1" role="main">
+        <div class="content-header white box-shadow" id="content-header">
+
+            {% block header %}
+
+                {% include 'backend/includes/layouts/header_section_1.html' %}
+
+            {% endblock %}
+
+        </div>
+
+        {% block content %}
+
+            <div class="content-main" id="content-main">
+                <div>
+
+                    {% block greeting %}{% endblock %}
+
+                </div>
+            </div>
+
+        {% endblock %}
+
+        {% block footer %}
+
+            {% include 'backend/includes/layouts/footer_section_1.html' %}
+
+        {% endblock %}
+
+    </div>
+</div>
+
+    <script src="{% static 'admin/js/app.js' %}"></script>
+    <script src="{% static 'admin/libs/jquery-fullscreen-plugin/jquery.fullscreen-min.js' %}"></script>
+    <script src="{% static 'admin/js/plugins/fullscreen.js' %}"></script>
+
+    {% block script %}{% endblock %}
+
+</body>
+</html>

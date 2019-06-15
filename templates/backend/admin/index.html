@@ -1,0 +1,31 @@
+{% extends 'backend/base.html' %}
+
+{% load static %}
+
+{% block header %}
+
+    {{ block.super }}
+
+{% endblock %}
+
+{% block content %}
+
+    {% block greeting %}
+
+        {% include 'backend/includes/layouts/greeting_section.html' %}
+
+    {% endblock %}
+
+{% endblock %}
+
+{% block footer %}
+
+    {{ block.super }}
+
+{% endblock %}
+
+{% block script %}
+
+    {{ block.super }}
+
+{% endblock %}

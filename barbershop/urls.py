@@ -15,13 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('barbershop.frontend.home.urls')),
-    path('about/', include('barbershop.frontend.about.urls')),
-    path('service/', include('barbershop.frontend.service.urls')),
-    path('blog/', include('barbershop.frontend.blog.urls')),
-    path('shop/', include('barbershop.frontend.shop.urls')),
-    path('contact/', include('barbershop.frontend.contact.urls')),
+    path('admin/', include('barbershop.apps.admin.urls')),
+    path('api/', include('barbershop.apps.api.urls')),
+
+    path('', include('barbershop.apps.home.urls')),
+    path('about/', include('barbershop.apps.about.urls')),
+    path('service/', include('barbershop.apps.service.urls')),
+    path('blog/', include('barbershop.apps.blog.urls')),
+    path('shop/', include('barbershop.apps.shop.urls')),
+    path('contact/', include('barbershop.apps.contact.urls')),
 ]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_URL)

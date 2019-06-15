@@ -27,23 +27,29 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_REDIRECT_URL = '/admin'
+LOGIN_URL = '/admin/login'
+LOGOUT_REDIRECT_URL = '/admin/login'
 
 # Application definition
 
 INSTALLED_APPS = [
+    'barbershop.apps.service',
+    'barbershop.apps.home',
+    'barbershop.apps.about',
+    'barbershop.apps.blog',
+    'barbershop.apps.shop',
+    'barbershop.apps.contact',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.forms',
 
-    'barbershop.frontend.home',
-    'barbershop.frontend.about',
-    'barbershop.frontend.service',
-    'barbershop.frontend.blog',
-    'barbershop.frontend.shop',
-    'barbershop.frontend.contact',
+    'barbershop.apps.api',
 ]
 
 MIDDLEWARE = [
@@ -72,6 +78,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries': {
+                'filter_extras': 'templatetags.filter_extras',
+            },
         },
     },
 ]
@@ -131,3 +140,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+FORM_RENDERER = 'django.forms.renderers.TemplatesSetting'
