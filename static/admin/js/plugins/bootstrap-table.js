@@ -22,7 +22,7 @@
     }
 
     function textFormatter(data, obj) {
-        return '<a href="/admin/service/'+obj.detail.slug+'/edit"><strong>'+data+'</strong></a>';
+        return '<a href="'+ obj.edit_url +'"><strong>'+data+'</strong></a>';
     }
 
     function getIdSelections($table) {

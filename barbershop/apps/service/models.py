@@ -1,17 +1,22 @@
-from django.db import models
+from barbershop.validators import prohibited_slug_validator, format_slug_validator
+from .assistants import ServiceAssistant, DayAssistant
 from django.utils import timezone
-from django.utils.text import slugify
-from barbershop.validators import prohibited_slug_validator, slug_validate
+from django.db import models
 
 
-class Service(models.Model):
+class Service(models.Model, ServiceAssistant):
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.self_ = self
+        self.instance_ = self.__class__
+
     title = models.CharField(max_length=255, verbose_name='Nazwa usługi')
     slug = models.CharField(
         max_length=255,
-        validators=[prohibited_slug_validator, slug_validate],
-        verbose_name='Slug usługi',
-        unique=True,
+        validators=[prohibited_slug_validator, format_slug_validator],
         blank=True,
+        verbose_name='Slug usługi',
     )
     description = models.CharField(max_length=255, verbose_name='Opis usługi')
     image = models.ImageField(upload_to='service/image/', blank=True, verbose_name='Zdjecie usługi')
@@ -23,15 +28,6 @@ class Service(models.Model):
 
     def __str__(self):
         return self.title
-
-    def define_block_class(self):
-        block_class = 'box-service-dark box-service-reverse' if self.id % 2 != 0 else ''
-        return block_class
-
-    def save(self, *args, **kwargs):
-        if not self.id or not self.slug:
-            self.slug = slugify(self.title, allow_unicode=True)
-        super().save(*args, **kwargs)
 
 
 class Barber(models.Model):
@@ -56,7 +52,13 @@ class BarberDaysSetting(models.Model):
         return self.title
 
 
-class Day(models.Model):
+class Day(models.Model, DayAssistant):
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.self_ = self
+        self.instance_ = self.__class__
+
     title = models.CharField(max_length=100, verbose_name='Dzien')
     shortcut = models.CharField(max_length=10, verbose_name='Skrot')
     date = models.DateField(default=timezone.now, verbose_name='Data dnia')
@@ -67,9 +69,6 @@ class Day(models.Model):
 
     def __str__(self):
         return self.title
-
-    def define_working_day(self):
-        return '' if self.status else 'disabled'
 
 
 class Time(models.Model):

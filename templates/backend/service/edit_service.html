@@ -19,6 +19,7 @@
 
             <div class="form-row">
                 <div class="form-group col-md-6">
+
                     <div class="form-group js-slug-source">
                         <label for="inputTitle">Tytuł</label>
 
@@ -118,7 +119,7 @@
         //script for save new service
         $('form').submit(function(e){
             e.preventDefault();
-            console.log($(this)[0]);
+
             var formData = new FormData($(this)[0]);
 
             $.ajax({
@@ -132,7 +133,7 @@
                         document.location.href = response.url_success;
                     }
                     if(response.result < 0){
-                        console.log(response);
+                        show_error_message(response.message)
                     }
                 }
             });
@@ -151,6 +152,23 @@
         $('.js-slug-source').find('input').keyup(function(){
             $('.js-slug').find('input').val(generate_slug($(this).val()));
         });
+
+        //functions to show service save errors
+        function show_error_message(data){
+            if(typeof data == 'string' || data instanceof String){
+                showErrorToast(data);
+            }
+            else {
+                var first = true;
+                $.each(data, function (k, v) {
+                    showErrorToast(v[0]);
+                    first = false;
+                    if (first === false) {
+                        return false
+                    }
+                })
+            }
+        }
     </script>
 
 {% endblock %}
