@@ -53,7 +53,7 @@ class SaveServiceApi(LoginRequiredMixin, FormView):
         try:
             service.save()
         except IntegrityError as e:
-            return error.data_save.format(e)
+            return error_response(error.data_save.format(e))
 
         return success_response(success.data_save)
 
@@ -63,3 +63,20 @@ class SaveServiceApi(LoginRequiredMixin, FormView):
 
 class DeleteServiceApi(LoginRequiredMixin, DeleteView):
     pass
+
+
+class RemoveServiceApi(LoginRequiredMixin, View):
+    def post(self, request):
+        json_data = request.POST['data']
+        data = json.loads(json_data)
+
+        try:
+            quantity = Service.objects.filter(id__in=data).delete()
+            if quantity[0] == 0:
+                return error_response(error.no_objects)
+            else:
+                rejection = 'Wpis został' if quantity[0] == 1 else 'Wpisy zostały'
+        except IntegrityError as e:
+            return error_response(error.data_remove.format(e))
+
+        return success_response('{} pomyślnie usunięte'.format(rejection))

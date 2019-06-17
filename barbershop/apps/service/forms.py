@@ -32,39 +32,61 @@ class ServiceForm(forms.ModelForm):
     class Meta:
         model = Service
         fields = '__all__'
+        labels = {
+            'title': 'Tytuł',
+            'slug': 'Slug',
+            'meta_keywords': 'Słowa kluczowe SEO',
+            'meta_description': 'Opis SEO',
+            'description': 'Opis',
+            'price': 'Cena',
+            'image': 'Zdjęcie',
+            'icon': 'Ikona',
+            'status': 'Wyświetlane na stronie',
+        }
         widgets = {
 
             'title': forms.TextInput(attrs={
-                    'class': 'form-control',
-                    'id': 'inputTitle',
-                    'placeholder': 'Tytuł'
+                'class': 'form-control',
+                'id': 'input_title',
+                'placeholder': 'Nazwa usługi'
             }),
             'slug': forms.TextInput(attrs={
                 'class': 'form-control',
-                'id': 'inputSlug',
-                'placeholder': 'Slug'
+                'id': 'input_slug',
+                'placeholder': 'Wyrażenie do wyświetlenia w url usługi'
+            }),
+            'meta_keywords': forms.TextInput(attrs={
+                'class': 'form-control',
+                'id': 'input_meta_keywords',
+                'placeholder': 'Słowa kluczowe dla SEO (wprowadź przez przecinek)'
+            }),
+            'meta_description': forms.Textarea(attrs={
+                'class': 'form-control',
+                'id': 'input_meta_description',
+                'placeholder': 'Krótki opis dla SEO (maksymalnie 255 znaków)',
+                'rows': '5'
             }),
             'description': forms.Textarea(attrs={
                 'class': 'form-control',
-                'id': 'inputDescription',
+                'id': 'input_description',
                 'placeholder': 'Opis usługi',
                 'rows': '10'
             }),
             'price': forms.NumberInput(attrs={
                 'class': 'form-control',
-                'id': 'inputPrice',
-                'placeholder': 'Cena'
+                'id': 'input_price',
+                'placeholder': 'Cena usługi'
             }),
             'image': forms.FileInput(attrs={
                 'class': 'form-control',
-                'id': 'inputImage'
+                'id': 'input_image'
             }),
             'icon': forms.FileInput(attrs={
                 'class': 'form-control',
-                'id': 'inputIcon'
+                'id': 'input_icon'
             }),
             'status': widgets.CheckboxInputWidget(attrs={
-                'id': 'checkboxStatus',
+                'id': 'checkbox_status',
             }),
         }
         error_messages = {

@@ -3898,7 +3898,7 @@
         t = !1);
         var i, r, o;
         return t || (de.createHTMLDocument ? (t = te.implementation.createHTMLDocument(""),
-        i = t.createElement("base"),
+        i = t.createElement("front_base.html"),
         i.href = te.location.href,
         t.head.appendChild(i)) : t = te),
         r = xe.exec(e),

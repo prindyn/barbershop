@@ -1,7 +1,9 @@
 class ErrorMessages:
 
     uploading_files = u'Wypełnij wszystkie pliki'
+    no_objects = u'Nie wybrano żadnych obiektów'
     data_save = u'Nie można zapisać danych: {}'
+    data_remove = u'Nie można usunąć danych: {}'
     field_required = u'Pole {} nie może być puste'
     field_unique = u'{} już istnieje'
     forbidden_slug = u'Korzystanie z tego slagu: "{}" jest zabronione'

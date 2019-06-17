@@ -18,86 +18,43 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
 
-                    <div class="form-group js-slug-source">
-                        <label for="inputTitle">Tytuł</label>
+                    {% for field in form %}
 
-                        {{ form.title }}
+                        {% if field == 'image' %}
 
-                    </div>
+                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
 
-                    <div class="form-group js-slug">
-                        <label for="inputSlug">Slug</label>
+                                {% include 'forms/includes/'|add:template_name %}
 
-                        {{ form.slug }}
+                            {% endwith %}
 
-                    </div>
+                        {% elif field == 'icon '%}
 
-                    <div class="form-group">
-                        <label for="inputDescription">Opisanie</label>
+                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
 
-                        {{ form.description }}
+                                {% include 'forms/includes/'|add:template_name %}
 
-                    </div>
+                            {% endwith %}
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="inputPrice">Price</label>
 
-                            {{ form.price }}
 
-                        </div>
-                    </div>
+                        {% else %}
 
-                    <div class="form-row">
+                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
 
-                        <div class="col-6 col-sm-6 col-md-6">
-                            <div class="box-img p-1">
-                                <label for="inputImage">Image</label>
-                                <img id="image" src="" alt="" class="w-100" style="display: none">
-                                <div class="p-2">
-                                    <div class="text-ellipsis">
+                                    {% include 'forms/includes/'|add:template_name %}
 
-                                        {{ form.image }}
+                                {% endwith %}
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endif %}
 
-                        <div class="col-6 col-sm-6 col-md-6">
-                            <div class="box-icon p-1">
-                                <label for="inputIcon">Icon</label>
-                                <img id="icon" src="" alt="" class="w-100" style="display: none">
-                                <div class="p-2">
-                                    <div class="text-ellipsis">
+                    {% endfor %}
 
-                                        {{ form.icon }}
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-                        <label class="md-switch" for="checkboxStatus">
-
-                            {{ form.status }} Wyświetlić na stronie
-
-                        </label>
-                    </div>
                 </div>
             </div>
             <button type="submit" class="btn primary">Zapisać</button>
         </form>
     </div>
-
-{% endblock %}
-
-{% block script %}
-
-    {{ block.super }}
 
     <script>
 

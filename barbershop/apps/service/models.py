@@ -18,10 +18,12 @@ class Service(models.Model, ServiceAssistant):
         blank=True,
         verbose_name='Slug usługi',
     )
+    meta_keywords = models.CharField(max_length=255, blank=True, verbose_name='Słowa kluczowe SEO')
+    meta_description = models.CharField(max_length=255, blank=True, verbose_name='Opis SEO')
     description = models.CharField(max_length=255, verbose_name='Opis usługi')
+    price = models.FloatField(max_length=10, null=True, verbose_name='Cena usługi')
     image = models.ImageField(upload_to='service/image/', blank=True, verbose_name='Zdjecie usługi')
     icon = models.ImageField(upload_to='service/icon/', blank=True, verbose_name='Ikona usługi')
-    price = models.FloatField(max_length=10, null=True, verbose_name='Cena usługi')
     status = models.BooleanField(default=False, verbose_name='Czy opublikowana usługa')
     created_date = models.DateTimeField(auto_now_add=True, verbose_name='Data utworzenia usługi')
     updated_date = models.DateTimeField(auto_now=True, verbose_name='Data zmiany usługi')

@@ -22,12 +22,12 @@
     }
 
     function textFormatter(data, obj) {
-        return '<a href="'+ obj.edit_url +'"><strong>'+data+'</strong></a>';
+        return '<a href="'+ obj.edit_url +'" data-id="'+obj.id+'"><strong>'+data+'</strong></a>';
     }
 
     function getIdSelections($table) {
         return $.map($table.bootstrapTable('getSelections'), function (row) {
-            return row.title
+            return row.id;
         });
     }
 
@@ -122,7 +122,7 @@
         $remove.click(function () {
             var ids = getIdSelections($table);
             $table.bootstrapTable('remove', {
-                field: 'title',
+                field: 'id',
                 values: ids
             });
             $remove.prop('disabled', true);
