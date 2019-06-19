@@ -1,81 +1,60 @@
-from barbershop.messages import ErrorMessages as error, SuccessMessages as success
-from barbershop.services import error_response, success_response
-from .services import upload_image, services_json_formatter
+from .utils import ObjectListApiMixin, SaveObjectApiMixin, RemoveObjectApiMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 from barbershop.apps.service.forms import ServiceForm
-from django.views.generic import FormView
-from barbershop.apps.service.models import *
-from django.http import JsonResponse
-from django.db import IntegrityError
-from django.core import serializers
-from django.views import View
-import json
-
-files_location = 'media/service/'
-default_image_path = 'media/no-img.png'
+from barbershop.apps.barber.forms import BarberForm
+from barbershop.apps.service.models import Service
+from barbershop.apps.barber.models import Barber
 
 
-class ServiceListApi(View):
-    json_response = {}
-
-    def get(self, request):
-        services = serializers.serialize('json', Service.objects.all())
-        self.json_response = json.loads(services)
-        response = services_json_formatter(self.json_response)
-
-        return JsonResponse(response, safe=False)
+class ServiceListApi(LoginRequiredMixin, ObjectListApiMixin):
+    model = Service
 
 
-class SaveServiceApi(LoginRequiredMixin, FormView):
+class SaveServiceApi(LoginRequiredMixin, SaveObjectApiMixin):
+    model = Service
     form_class = ServiceForm
+    url_success = '/admin/service',
+    files_location = 'media/service/'
 
-    def form_valid(self, form):
-        has_id = 'id' in self.request.POST
+    def prescribe_data(self, form):
+        self.obj.title = form.cleaned_data['title']
+        self.obj.slug = form.cleaned_data['slug']
+        self.obj.meta_keywords = form.cleaned_data['meta_keywords']
+        self.obj.meta_description = form.cleaned_data['meta_description']
+        self.obj.description = form.cleaned_data['description']
+        self.obj.price = form.cleaned_data['price']
+        self.obj.button = form.cleaned_data['button']
+        self.obj.status = form.cleaned_data['status']
 
-        image = self.request.FILES.get('image')
-        icon = self.request.FILES.get('icon')
-
-        if (not image or not icon) and not has_id:
-            return error_response(error.uploading_files)
-
-        service = Service() if not has_id else Service.objects.get(id=self.request.POST['id'])
-        service.title = form.cleaned_data['title']
-        service.slug = form.cleaned_data['slug']
-        service.meta_keywords = form.cleaned_data['meta_keywords']
-        service.meta_description = form.cleaned_data['meta_description']
-        service.description = form.cleaned_data['description']
-        service.price = form.cleaned_data['price']
-        service.button = form.cleaned_data['button']
-        service.status = form.cleaned_data['status']
-
-        if not has_id or image or icon:
-            if image:
-                service.image = upload_image(image, files_location + 'images') if image else default_image_path
-            if icon:
-                service.icon = upload_image(icon, files_location + 'icons') if icon else default_image_path
-        try:
-            service.save()
-        except IntegrityError as e:
-            return error_response(error.record_save.format(e))
-
-        return success_response(success.record_save)
-
-    def form_invalid(self, form):
-        return error_response(form.errors)
+        return self.obj
 
 
-class RemoveServiceApi(LoginRequiredMixin, View):
-    def post(self, request):
-        json_data = request.POST['data']
-        data = json.loads(json_data)
+class RemoveServiceApi(LoginRequiredMixin, RemoveObjectApiMixin):
+    model = Service
+    url_success = '/admin/service'
 
-        try:
-            quantity = Service.objects.filter(id__in=data).delete()
-            if quantity[0] == 0:
-                return error_response(error.no_objects)
-            else:
-                rejection = 'Wpis został' if quantity[0] == 1 else 'Wpisy zostały'
-        except IntegrityError as e:
-            return error_response(error.record_remove.format(e))
 
-        return success_response(success.record_delete.format(rejection))
+class BarberListApi(LoginRequiredMixin, ObjectListApiMixin):
+    model = Barber
+
+
+class SaveBarberApi(LoginRequiredMixin, SaveObjectApiMixin):
+    model = Barber
+    form_class = BarberForm
+    url_success = '/admin/barber'
+    files_location = 'media/barber/'
+
+    def prescribe_data(self, form):
+        self.obj.title = form.cleaned_data['title']
+        self.obj.slug = form.cleaned_data['slug']
+        self.obj.meta_keywords = form.cleaned_data['meta_keywords']
+        self.obj.meta_description = form.cleaned_data['meta_description']
+        self.obj.description = form.cleaned_data['description']
+        self.obj.status = form.cleaned_data['status']
+
+        return self.obj
+
+
+class RemoveBarberApi(LoginRequiredMixin, RemoveObjectApiMixin):
+    model = Barber
+    url_success = '/admin/barber'

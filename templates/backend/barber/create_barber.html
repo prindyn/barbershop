@@ -1,0 +1,58 @@
+{% extends 'backend/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="padding">
+        <form role="form" action="{% url 'save-barber' %}" data-url-success="{% url 'barber-list' %}" method="post" enctype="multipart/form-data" novalidate>
+
+            {% csrf_token %}
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+
+                    {% for field in form %}
+
+                        {% if field == 'image' %}
+
+                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
+
+                                {% include 'forms/includes/'|add:template_name %}
+
+                            {% endwith %}
+
+                        {% elif field == 'icon '%}
+
+                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
+
+                                {% include 'forms/includes/'|add:template_name %}
+
+                            {% endwith %}
+
+                        {% else %}
+
+                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
+
+                                    {% include 'forms/includes/'|add:template_name %}
+
+                                {% endwith %}
+
+                        {% endif %}
+
+                    {% endfor %}
+
+                </div>
+            </div>
+            <button type="submit" value="save-only" class="btn primary">Zapisać</button>
+            <button type="submit" value="save-and-new" data-new-url="{% url 'create-barber' %}" class="btn success">Zapisać i dodać nowy</button>
+        </form>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+
+    <script src="{% static 'admin/js/script.js' %}"></script>
+
+{% endblock %}

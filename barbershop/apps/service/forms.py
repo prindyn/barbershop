@@ -101,7 +101,7 @@ class ServiceForm(forms.ModelForm):
             },
             'slug': {
                 'required': error.field_required.format('"Slug"'),
-                'unique': error.field_unique.format('Ten slug')
+                'unique': error.field_unique.format('Slug')
             },
             'description': {
                 'required': error.field_required.format('"Opis"')

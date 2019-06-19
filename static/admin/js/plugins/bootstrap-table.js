@@ -88,12 +88,6 @@
                         title: 'Created',
                         sortable: true
                     },
-                    // {
-                    //     field: 'operate',
-                    //     title: '',
-                    //     align: 'center',
-                    //     formatter: operateFormatter
-                    // }
                 ]
             ]
         });

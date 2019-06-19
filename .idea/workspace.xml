@@ -2,41 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4926d6fe-6a74-4cff-b53f-ae7cbc89b8eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/forms/includes/button.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/forms/includes/modal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/barbershop/apps/barber/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/barbershop/apps/barber/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/barbershop/apps/calendar/assistants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backend/barber/barber_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backend/barber/create_barber.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backend/barber/edit_barber.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/forms/includes/name.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d16608e3-0c65-438d-9682-1740cfe431c8.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/barbershop/apps/admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/admin/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/admin/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/barbershop/apps/api/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/api/services.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/barbershop/apps/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/barbershop/apps/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/blog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/barber/assistants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/blog/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/blog/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/blog/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/api/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/blog/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/blog/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/blog/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/blog/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/assistants.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/service/assistants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/barbershop/apps/service/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/service/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0002_auto_20190615_2342.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0003_auto_20190616_0230.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0004_auto_20190616_1304.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0005_auto_20190616_1306.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0006_auto_20190616_1606.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0007_auto_20190616_1621.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0008_auto_20190616_1749.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0009_auto_20190616_1753.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0010_auto_20190617_1600.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0011_auto_20190617_1703.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0012_auto_20190617_1808.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/migrations/0002_service_button.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/barbershop/apps/service/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/service/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/barbershop/apps/service/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/service/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/barbershop/messages.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/messages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/user/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/barbershop/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/barbershop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/admin/js/plugins/bootstrap-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/plugins/bootstrap-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/backend/includes/layouts/side_menu_section_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/backend/includes/layouts/side_menu_section_1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/backend/service/create_service.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/backend/service/create_service.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/backend/service/edit_service.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/backend/service/edit_service.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/backend/service/service_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/backend/service/service_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/forms/includes/icon.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms/includes/icon.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/forms/includes/image.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms/includes/image.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/forms/includes/price.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms/includes/price.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/frontend/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/frontend/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/frontend/includes/service/services_list_section.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/frontend/includes/service/services_list_section.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/forms/includes/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forms/includes/modal.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,86 +88,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/backend/service/edit_service.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/backend/service/create_service.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="102" column="17" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="102" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/barbershop/apps/service/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2055">
-              <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/barbershop/messages.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/barbershop/services.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/barbershop/apps/api/services.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/barbershop/apps/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="76" column="40" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="40" />
+            <state relative-caret-position="780">
+              <caret line="52" column="53" lean-forward="true" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
               <folding>
-                <element signature="e#0#82#0" expanded="true" />
+                <element signature="e#1#80#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/forms/includes/modal.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/barbershop/apps/api/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="115" selection-start-line="9" selection-start-column="115" selection-end-line="9" selection-end-column="115" />
+            <state relative-caret-position="195">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#82#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,18 +118,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bs-print</find>
-      <find>default</find>
-      <find>btn-default</find>
-      <find>printPageBuilderDefault</find>
       <find>json_respons</find>
       <find>save</find>
       <find>Storage</find>
@@ -207,6 +152,10 @@
       <find>color: inherit;</find>
       <find>img</find>
       <find>data-url-success</find>
+      <find>Calendar</find>
+      <find>BarberDaysSetting</find>
+      <find>DetailView</find>
+      <find>Service</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -222,57 +171,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/barbershop/apps/shop/apps.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/user/apps.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/service/apps.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/service/admin.py" />
-        <option value="$PROJECT_DIR$/media/__init__.py" />
-        <option value="$PROJECT_DIR$/barbershop/settings.py" />
-        <option value="$PROJECT_DIR$/barbershop/utils.py" />
-        <option value="$PROJECT_DIR$/barbershop/error_messages.py" />
-        <option value="$PROJECT_DIR$/static/js/toastmessage-functions.js" />
-        <option value="$PROJECT_DIR$/barbershop/SERVICES.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/service/services.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/service/model_assistant.py" />
-        <option value="$PROJECT_DIR$/barbershop/validators.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/service/assistants.py" />
-        <option value="$PROJECT_DIR$/templates/backend/base.html" />
-        <option value="$PROJECT_DIR$/templates/backend/admin/index.html" />
-        <option value="$PROJECT_DIR$/templates/backend/back_base.html" />
-        <option value="$PROJECT_DIR$/templates/forms/includes/_title.py" />
-        <option value="$PROJECT_DIR$/templates/forms/includes/_slug.py" />
-        <option value="$PROJECT_DIR$/templates/forms/includes/status.html" />
-        <option value="$PROJECT_DIR$/templates/forms/includes/title.html" />
-        <option value="$PROJECT_DIR$/templates/forms/includes/slug.html" />
         <option value="$PROJECT_DIR$/templates/forms/includes/meta_keywords.html" />
         <option value="$PROJECT_DIR$/templates/forms/includes/meta_description.html" />
         <option value="$PROJECT_DIR$/templates/forms/includes/description.html" />
         <option value="$PROJECT_DIR$/static/admin/css/app.css" />
-        <option value="$PROJECT_DIR$/barbershop/urls.py" />
         <option value="$PROJECT_DIR$/templates/frontend/base.html" />
-        <option value="$PROJECT_DIR$/barbershop/apps/service/models.py" />
         <option value="$PROJECT_DIR$/templates/forms/includes/button.html" />
         <option value="$PROJECT_DIR$/templates/forms/includes/price.html" />
         <option value="$PROJECT_DIR$/templates/frontend/includes/service/services_list_section.html" />
-        <option value="$PROJECT_DIR$/templates/forms/includes/icon.html" />
-        <option value="$PROJECT_DIR$/templates/forms/includes/image.html" />
-        <option value="$PROJECT_DIR$/templates/backend/service/service_list.html" />
-        <option value="$PROJECT_DIR$/barbershop/apps/service/forms.py" />
         <option value="$PROJECT_DIR$/static/admin/js/app.js" />
-        <option value="$PROJECT_DIR$/static/admin/js/plugins/bootstrap-table.js" />
         <option value="$PROJECT_DIR$/templates/backend/service/_confirm_delete.html" />
         <option value="$PROJECT_DIR$/templates/backend/service/service_confirm_delete.html" />
         <option value="$PROJECT_DIR$/barbershop/messages.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/api/urls.py" />
-        <option value="$PROJECT_DIR$/templates/forms/includes/modal.html" />
-        <option value="$PROJECT_DIR$/barbershop/apps/admin/urls.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/api/views.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/api/services.py" />
-        <option value="$PROJECT_DIR$/barbershop/services.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/service/views.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/barbershop/apps/calendarse/apps.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/user/models.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/service/assistants.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/calendar/assistants.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/admin/views.py" />
+        <option value="$PROJECT_DIR$/barbershop/settings.py" />
+        <option value="$PROJECT_DIR$/barbershop/urls.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/setting/models.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/calendar/models.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/barber/urls.py" />
+        <option value="$PROJECT_DIR$/templates/backend/includes/layouts/side_menu_section_1.html" />
+        <option value="$PROJECT_DIR$/barbershop/apps/api/assistants.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/service/models.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/service/forms.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/admin/urls.py" />
+        <option value="$PROJECT_DIR$/templates/forms/includes/name.html" />
+        <option value="$PROJECT_DIR$/barbershop/apps/barber/assistants.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/barber/forms.py" />
+        <option value="$PROJECT_DIR$/templates/forms/includes/modal.html" />
+        <option value="$PROJECT_DIR$/barbershop/apps/service/views.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/barber/views.py" />
+        <option value="$PROJECT_DIR$/static/admin/js/plugins/bootstrap-table.js" />
+        <option value="$PROJECT_DIR$/templates/backend/base.html" />
+        <option value="$PROJECT_DIR$/templates/backend/barber/create_barber.html" />
+        <option value="$PROJECT_DIR$/templates/backend/barber/edit_barber.html" />
         <option value="$PROJECT_DIR$/templates/backend/service/create_service.html" />
         <option value="$PROJECT_DIR$/templates/backend/service/edit_service.html" />
+        <option value="$PROJECT_DIR$/templates/backend/service/service_list.html" />
+        <option value="$PROJECT_DIR$/static/admin/js/script.js" />
+        <option value="$PROJECT_DIR$/templates/backend/barber/barber_list.html" />
+        <option value="$PROJECT_DIR$/barbershop/apps/barber/models.py" />
+        <option value="$PROJECT_DIR$/templates/forms/includes/image.html" />
+        <option value="$PROJECT_DIR$/templates/forms/includes/icon.html" />
+        <option value="$PROJECT_DIR$/barbershop/apps/api/services.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/api/urls.py" />
+        <option value="$PROJECT_DIR$/barbershop/services.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/api/utils.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/api/views.py" />
       </list>
     </option>
   </component>
@@ -290,6 +239,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,26 +250,12 @@
             <path>
               <item name="barbershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="barbershop" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="barbershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="barbershop" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="barbershop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="barbershop" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,7 +263,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mykytiak" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/db.sqlite3" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -416,7 +352,8 @@
       <workItem from="1560831311878" duration="1646000" />
       <workItem from="1560863429044" duration="9258000" />
       <workItem from="1560919639958" duration="16043000" />
-      <workItem from="1560944824561" duration="591000" />
+      <workItem from="1560944824561" duration="14143000" />
+      <workItem from="1560964006599" duration="9954000" />
     </task>
     <task id="LOCAL-00001" summary="Save services">
       <created>1560618385212</created>
@@ -439,17 +376,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560797818725</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Delete service alone">
+      <created>1560945587961</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560945587961</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260663000" />
+    <option name="totallyTimeSpent" value="284169000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="-1" width="1286" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16531605" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16774717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" show_stripe_button="false" weight="0.32874617" />
@@ -463,14 +407,14 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" weight="0.32874617" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32721713" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.33027524" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008104" side_tool="true" weight="0.33027524" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49918962" weight="0.33027524" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32874617" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" sideWeight="0.49847096" weight="0.3298217" />
-      <window_info anchor="right" id="Database" order="4" sideWeight="0.50152904" weight="0.3298217" />
+      <window_info anchor="right" id="Database" order="4" sideWeight="0.50152904" weight="0.2771475" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +424,8 @@
     <MESSAGE value="Save services" />
     <MESSAGE value="Ending service module saving" />
     <MESSAGE value="Removing service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing service" />
+    <MESSAGE value="Delete service alone" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete service alone" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -494,191 +439,283 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/backend/includes/layouts/footer_section_1.html">
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/calendar/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/includes/layouts/header_section_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2261" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/includes/layouts/header_section_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1961" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/includes/layouts/side_menu_section_2.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/includes/registration/login_form.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/includes/layouts/side_menu_section_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/home/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/includes/layouts/greeting_section.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/toastmessage-functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/services.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forms/includes/description.html">
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/calendar/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forms/includes/meta_description.html">
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/calendar/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/calendar/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/user/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+        <state relative-caret-position="499">
+          <caret line="38" column="116" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="38" selection-end-column="116" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forms/includes/meta_keywords.html">
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/calendar/assistants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forms/includes/slug.html">
+    <entry file="file://$PROJECT_DIR$/barbershop/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/admin/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/api/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="214">
+          <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forms/includes/status.html">
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forms/includes/title.html">
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/calendar/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/css/app.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10608" column="40" lean-forward="true" selection-start-line="10608" selection-start-column="40" selection-end-line="10608" selection-end-column="40" />
+        <state relative-caret-position="570">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
-            <element signature="e#36132#36366#2" expanded="true" />
-            <element signature="e#37269#37422#1" expanded="true" />
-            <element signature="e#37463#37697#1" expanded="true" />
-            <element signature="e#41102#41378#2" expanded="true" />
-            <element signature="e#42309#42462#1" expanded="true" />
-            <element signature="e#42503#42779#1" expanded="true" />
-            <element signature="e#77854#78041#2" expanded="true" />
-            <element signature="e#78300#78436#2" expanded="true" />
-            <element signature="e#78891#79024#2" expanded="true" />
-            <element signature="e#80756#80909#1" expanded="true" />
-            <element signature="e#96255#96485#2" expanded="true" />
-            <element signature="e#97502#97738#2" expanded="true" />
-            <element signature="e#134954#135131#2" expanded="true" />
-            <element signature="e#135187#135364#2" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/site-packages/django/templatetags/static.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="143" column="4" selection-start-line="143" selection-start-column="4" selection-end-line="143" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/barbershop/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        <state relative-caret-position="315">
+          <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
           <folding>
             <element signature="e#634#666#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/base.html">
+    <entry file="file://$PROJECT_DIR$/templates/backend/includes/layouts/side_menu_section_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="387">
+          <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forms/includes/price.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/barber/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forms/includes/button.html">
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/api/assistants.py" />
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/admin/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/includes/service/services_list_section.html">
+    <entry file="file://$PROJECT_DIR$/templates/forms/includes/description.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forms/includes/title.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="108" selection-start-line="27" selection-start-column="108" selection-end-line="27" selection-end-column="108" />
+        <state relative-caret-position="75">
+          <caret line="5" column="6" lean-forward="true" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/service/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/forms/includes/name.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+        <state relative-caret-position="75">
+          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/models.py">
+    <entry file="das://647f877f-90c6-4598-ad85-64f3ae8b253a/schema/main/table/barber_barber">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="79dc5512-bb0b-4854-ae0a-c937b890e027">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/647f877f-90c6-4598-ad85-64f3ae8b253a/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="1545">
+          <caret line="103" column="54" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/barber/assistants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forms/includes/modal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/messages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/barber/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-101">
+          <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/admin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/barber/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1504">
+          <caret line="156" column="26" selection-start-line="156" selection-start-column="26" selection-end-line="156" selection-end-column="26" />
           <folding>
             <element signature="e#0#82#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forms/includes/icon.html">
+    <entry file="file://$PROJECT_DIR$/static/admin/js/plugins/bootstrap-table.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backend/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backend/barber/create_barber.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backend/barber/edit_barber.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backend/service/create_service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="65" column="14" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backend/service/edit_service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backend/service/service_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/barber/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backend/barber/barber_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forms/includes/icon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="181" selection-start-line="3" selection-start-column="181" selection-end-line="3" selection-end-column="181" />
         </state>
       </provider>
     </entry>
@@ -686,180 +723,79 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/js/app.js">
+    <entry file="file://$PROJECT_DIR$/static/admin/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="9032" column="28" lean-forward="true" selection-start-line="9032" selection-start-column="28" selection-end-line="9032" selection-end-column="28" />
+        <state relative-caret-position="-795">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/js/plugins/bootstrap-table.js">
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/services.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/assistants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="101" column="21" lean-forward="true" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/service/service_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="27" column="73" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/service/_confirm_delete.html" />
-    <entry file="file://$PROJECT_DIR$/templates/service/service_confirm_delete.html" />
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1293149564/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="769" column="8" selection-start-line="769" selection-start-column="8" selection-end-line="769" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/admin/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/site-packages/django/views/generic/edit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="201" column="6" selection-start-line="201" selection-start-column="6" selection-end-line="201" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/site-packages/django/views/generic/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/site-packages/django/views/generic/detail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d16608e3-0c65-438d-9682-1740cfe431c8/schema/main/table/service_service">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="f2fa001f-b858-481b-8ba3-2fce21bed8e9">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2055">
-          <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/messages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/services.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/barbershop/apps/api/services.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://647f877f-90c6-4598-ad85-64f3ae8b253a/schema/main/table/service_service">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="7a8d7498-ded1-4650-9764-a75453b3a546">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/services.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/barbershop/apps/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="76" column="40" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="40" />
+        <state relative-caret-position="780">
+          <caret line="52" column="53" lean-forward="true" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
           <folding>
-            <element signature="e#0#82#0" expanded="true" />
+            <element signature="e#1#80#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/forms/includes/modal.html">
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/api/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="115" selection-start-line="9" selection-start-column="115" selection-end-line="9" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/service/create_service.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="102" column="17" lean-forward="true" selection-start-line="86" selection-start-column="16" selection-end-line="102" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/service/edit_service.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
+        <state relative-caret-position="195">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

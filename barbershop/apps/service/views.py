@@ -1,14 +1,16 @@
+from barbershop.messages import ErrorMessages as error, SuccessMessages as success
+from django.views.generic import TemplateView, DetailView, CreateView, DeleteView
+from barbershop.services import error_response, success_response
+from barbershop.apps.setting.models import BarberDaysSetting
+from django.contrib.auth.mixins import LoginRequiredMixin
+from barbershop.utils import get_calendar, get_day_data
+from barbershop.apps.calendar.models import Time, Day
+from barbershop.apps.barber.models import Barber
 from django.shortcuts import render, redirect
+from django.db import IntegrityError
+from .forms import ServiceForm
 from django.views import View
 from .models import *
-from .forms import ServiceForm
-from django.urls import reverse_lazy
-from barbershop.services import error_response, success_response
-from barbershop.messages import ErrorMessages as error, SuccessMessages as success
-from barbershop.utils import get_calendar, get_day_data
-from django.views.generic import TemplateView, DetailView, CreateView, DeleteView
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db import IntegrityError
 
 
 class IndexView(View):
@@ -154,4 +156,4 @@ class DeleteServiceView(LoginRequiredMixin, DeleteView):
         except IntegrityError as e:
             return error_response(error.record_remove.format(e))
 
-        return success_response(success.record_delete.format('Wpis został'))
+        return success_response(success.record_delete.format('Wpis został'), 'service')

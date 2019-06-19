@@ -1,7 +1,7 @@
     <div class="col-6 col-sm-6 col-md-6">
         <div class="box-icon p-1">
             <label for="{{ field.name }}">{{ field.label }}</label>
-            <img id="{{ field.name }}" src="{{ service.icon }}" alt="" class="w-100" {% if not service.icon %}style="display: none"{% endif %}>
+            <img id="{{ field.name }}" src="{% if service %}{{ service.icon }}{% else %}{{ barber.icon }}{% endif %}" alt="" class="w-100" {% if not service.icon and not barber.icon %}style="display: none"{% endif %}>
             <div class="p-2">
                 <div class="text-ellipsis text-ellipsis form-file">
 

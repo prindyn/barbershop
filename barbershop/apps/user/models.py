@@ -16,9 +16,24 @@ class User(models.Model):
         related_name='user_extras_data',
         verbose_name='Użytkownik, do którego odnoszą się dane'
     )
-    img = models.ImageField(upload_to='media/backend/images', verbose_name='Obraz użytkownika')
+    image = models.ImageField(upload_to='user/image', verbose_name='Obraz użytkownika')
     birth_day = models.DateField(blank=True, verbose_name='Data urodzenia')
-    role = models.ForeignKey(Role, on_delete=models.CASCADE, verbose_name='Rola użytkownika')
+    role = models.ForeignKey('user.Role', on_delete=models.CASCADE, verbose_name='Rola użytkownika')
 
     def __str__(self):
         return str(self.birth_day)
+
+
+class Client(models.Model):
+    name = models.CharField(max_length=150, blank=False, verbose_name='Pewne imie klienta')
+    telephone = models.IntegerField(blank=False, verbose_name='Telefon klienta')
+    role = models.ForeignKey('user.Role', on_delete=models.CASCADE, verbose_name='Rola klienta')
+
+    def __str__(self):
+        return self.name
+
+
+class UserSocial(models.Model):
+    name = models.CharField(max_length=100, verbose_name='Nazwa linku społecznościowego')
+    link = models.URLField(verbose_name='Link społecznościowy')
+    user = models.ForeignKey('user.User', on_delete=models.CASCADE, verbose_name='Użytkownik, którego dotyczy link')

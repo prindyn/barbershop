@@ -25,7 +25,6 @@ urlpatterns = [
     path('', include('barbershop.apps.home.urls')),
     path('about/', include('barbershop.apps.about.urls')),
     path('service/', include('barbershop.apps.service.urls')),
-    path('blog/', include('barbershop.apps.blog.urls')),
     path('shop/', include('barbershop.apps.shop.urls')),
     path('contact/', include('barbershop.apps.contact.urls')),
 ]

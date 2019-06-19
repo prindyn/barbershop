@@ -34,12 +34,16 @@ LOGOUT_REDIRECT_URL = '/admin/login'
 # Application definition
 
 INSTALLED_APPS = [
-    'barbershop.apps.service',
-    'barbershop.apps.home',
     'barbershop.apps.about',
-    'barbershop.apps.blog',
-    'barbershop.apps.shop',
+    'barbershop.apps.api',
+    'barbershop.apps.barber',
+    'barbershop.apps.calendar',
     'barbershop.apps.contact',
+    'barbershop.apps.home',
+    'barbershop.apps.service',
+    'barbershop.apps.setting',
+    'barbershop.apps.shop',
+    'barbershop.apps.user',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -48,8 +52,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.forms',
-
-    'barbershop.apps.api',
 ]
 
 MIDDLEWARE = [

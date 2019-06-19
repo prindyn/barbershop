@@ -6,50 +6,21 @@
 
     <div class="padding">
         <div id="toolbar">
-            <button id="remove" class="btn danger" disabled="disabled" data-url="{% url 'remove-service' %}"><i class="fa fa-remove"></i> Delete
+            <button id="remove" class="btn danger" disabled="disabled" data-url="{% url 'remove-service' %}"><i class="fa fa-remove"></i> Usuńąć
             </button>
             {% csrf_token %}
-            <a href="{% url 'create-service' %}" id="add" class="btn success"><i class="fa fa-plus"></i> Add new
+            <a href="{% url 'create-service' %}" id="add" class="btn success"><i class="fa fa-plus"></i> Dodać nowy
             </a>
         </div>
         <div class="box">
-            <table data-plugin="bootstrapTable" id="table" data-toolbar="#toolbar" data-search="true" data-show-columns="true" data-detail-view="false" data-mobile-responsive="true" data-pagination="true" data-page-list="[10, 25, 50, 100, ALL]" data-url="{% url 'services' %}" class="table"></table>
+            <table data-plugin="bootstrapTable" id="table" data-toolbar="#toolbar" data-search="true" data-show-columns="true" data-mobile-responsive="true" data-pagination="true" data-page-list="[10, 25, 50, 100, ALL]" data-url="{% url 'services' %}" class="table"></table>
         </div>
     </div>
 
-    <script>
+{% endblock %}
 
-        $(window).on('load', function(){
+{% block script %}
 
-            var table = $('table#table');
-
-            $('button#remove').on('click', function(){
-                var a = table.find('tbody tr.selected').find('td a'),
-                    token = $('input[name="csrfmiddlewaretoken"]').val(),
-                    id_list = [],
-                    data;
-                $.each(a, function(k, v){
-                    id_list.push(v.attributes['data-id'].value);
-                });
-                data = JSON.stringify(id_list);
-                console.log(data);
-                $.ajax({
-                    url: $(this).attr('data-url'),
-                    method: 'post',
-                    dataType: 'json',
-                    data: {'data': data, 'csrfmiddlewaretoken': token},
-                    success:function(response){
-                        if(response.result > 0){
-                            showSuccessToast(response.message);
-                        }
-                        else{
-                            showErrorToast(response.message);
-                        }
-                    }
-                });
-            });
-        });
-
-    </script>
+    <script src="{% static 'admin/js/script.js' %}"></script>
 
 {% endblock %}

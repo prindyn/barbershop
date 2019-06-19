@@ -7,7 +7,16 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn dark-white p-x-md" data-dismiss="modal">Nie</button>
-                <button type="button" data-url="{% url 'delete-service' service.id %}" class="btn danger p-x-md js-delete" data-dismiss="modal">Tak</button>
+
+                {% if service %}
+
+                    <button type="button" data-url="{% url 'delete-service' service.id %}" class="btn danger p-x-md js-delete" data-dismiss="modal">Tak</button>
+
+                {% else %}
+
+                    <button type="button" data-url="{% url 'delete-barber' barber.id %}" class="btn danger p-x-md js-delete" data-dismiss="modal">Tak</button>
+
+                {% endif %}
             </div>
         </div>
     </div>

@@ -3,8 +3,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from barbershop.apps.admin.forms import AdminAuthenticationForm
 from django.views import View
 from django.contrib.auth import views
-from django.http import JsonResponse
-import json
 
 
 class AdminView(LoginRequiredMixin, View):

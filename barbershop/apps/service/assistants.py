@@ -23,11 +23,3 @@ class ServiceAssistant:
 
     def get_absolute_url(self):
         return reverse('edit-service', kwargs={'slug': self.self_.slug})
-
-
-class DayAssistant:
-    instance_ = None
-    self_ = None
-
-    def define_working_day(self):
-        return '' if self.self_.status else 'disabled'
