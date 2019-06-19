@@ -2,11 +2,13 @@
     <div class="col-6 col-sm-6 col-md-6">
         <div class="box-img p-1">
             <label for="{{ field.name }}">{{ field.label }}</label>
-            <img id="{{ field.name }}" src="" alt="" class="w-100" style="display: none">
+            <img id="{{ field.name }}" src="{{ service.image }}" alt="" class="w-100" {% if not service.image %}style="display: none"{% endif %}>
             <div class="p-2">
-                <div class="text-ellipsis">
+                <div class="text-ellipsis text-ellipsis form-file">
 
                     {{ field }}
+
+                    <button class="btn white">Wybierz plik...</button>
 
                 </div>
             </div>

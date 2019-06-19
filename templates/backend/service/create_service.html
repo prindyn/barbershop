@@ -52,7 +52,8 @@
 
                 </div>
             </div>
-            <button type="submit" class="btn primary">Zapisać</button>
+            <button type="submit" value="save-only" class="btn primary">Zapisać</button>
+            <button type="submit" value="save-and-new" data-new-url="{% url 'create-service' %}" class="btn success">Zapisać i dodać nowy</button>
         </form>
     </div>
 
@@ -75,8 +76,8 @@
         $('form').submit(function(e){
             e.preventDefault();
 
-            var formData = new FormData($(this)[0]);
-
+            var formData = new FormData($(this)[0]),
+                sender = $(document.activeElement);
             $.ajax({
                 url: $(this).attr("action"),
                 method: 'post',
@@ -85,10 +86,19 @@
                 processData: false,
                 success: function(response){
                     if(response.result > 0){
-                        document.location.href = response.url_success;
+                        showSuccessToast(response.message);
+                        if(sender.val() == 'save-and-new') {
+                            setTimeout(function(){
+                                document.location.href = sender.attr('data-new-url');
+                            }, 1000)
+                         } else {
+                             setTimeout(function(){
+                                document.location.href = response.url_success;
+                            }, 1000)
+                         }
                     }
                     if(response.result < 0){
-                        show_error_message(response.message)
+                        show_error_message(response.message);
                     }
                 }
             });

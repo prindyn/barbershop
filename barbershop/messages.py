@@ -2,8 +2,8 @@ class ErrorMessages:
 
     uploading_files = u'Wypełnij wszystkie pliki'
     no_objects = u'Nie wybrano żadnych obiektów'
-    data_save = u'Nie można zapisać danych: {}'
-    data_remove = u'Nie można usunąć danych: {}'
+    record_save = u'Nie można zapisać danych: {}'
+    record_remove = u'Nie można usunąć danych: {}'
     field_required = u'Pole {} nie może być puste'
     field_unique = u'{} już istnieje'
     forbidden_slug = u'Korzystanie z tego slagu: "{}" jest zabronione'
@@ -18,7 +18,8 @@ class ErrorMessages:
 
 class SuccessMessages:
 
-    data_save = u'Dane zostały pomyślnie zapisane'
+    record_save = u'Dane zostały pomyślnie zapisane'
+    record_delete = u'{} pomyślnie usunięte'
 
     def __setitem__(self, key, value):
         self[key] = value

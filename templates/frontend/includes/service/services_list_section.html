@@ -12,86 +12,23 @@
 
         <article class="box-service  {{ service.define_block_class }} ">
             <div class="box-service-left"><img class="box-service-image"
-                                               src="{% static service.img|cut:"static/" %}" alt=""
+                                               src="{{ service.image }}" alt=""
                                                width="500" height="490"/>
             </div>
             <div class="box-service-body">
                 <div class="box-service-header">
                     <p class="box-service-title">{{ service.title }}</p>
                     <p class="box-service-price">
-                        <small>$</small>{{ service.price|floatformat:"0" }}<small>{{ service.price|floatformat:"2"|slice:"2:" }}</small>
+                        <small>zl</small>{{ service.price|floatformat:"0" }}<small>{{ service.price|floatformat:"2"|slice:"2:" }}</small>
                     </p>
                 </div>
                 <div class="box-service-text">
                     <p>{{ service.description }} </p>
                 </div>
-                <a class="btn btn-sm box-service-control" href="{% url 'choose_barber' %}">Rezerwuj teraz</a>
+                <a class="btn btn-sm box-service-control" href="{% url 'choose_barber' %}">{{ service.button }}</a>
             </div>
         </article>
 
         {% endfor %}
-{#        <article class="box-service">#}
-{#            <div class="box-service-left"><img class="box-service-image"#}
-{#                                               src="{% static 'images/services-2-500x490.png' %}" alt=""#}
-{#                                               width="500" height="490"/>#}
-{#            </div>#}
-{#            <div class="box-service-body">#}
-{#                <div class="box-service-header">#}
-{#                    <p class="box-service-title">GOLENIE</p>#}
-{#                    <p class="box-service-price">#}
-{#                        <small>$</small>#}
-{#                        29.#}
-{#                        <small>00</small>#}
-{#                    </p>#}
-{#                </div>#}
-{#                <div class="box-service-text">#}
-{#                    <p>Golenie brody to jedna z naszych najpopularniejszych usług. Jest koniecznością dla wszystkich#}
-{#                        mężczyzn, którzy chcą mieć brodę, która wygląda oszałamiająco.</p>#}
-{#                </div>#}
-{#                <a class="btn btn-sm box-service-control" href="{% url 'choose_barber' %}">Rezerwuj teraz</a>#}
-{#            </div>#}
-{#        </article>#}
-{#        <article class="box-service box-service-dark box-service-reverse">#}
-{#            <div class="box-service-left"><img class="box-service-image"#}
-{#                                               src="{% static 'images/services-3-500x490.png' %}" alt=""#}
-{#                                               width="500" height="490"/>#}
-{#            </div>#}
-{#            <div class="box-service-body">#}
-{#                <div class="box-service-header">#}
-{#                    <p class="box-service-title">Przycinanie brody</p>#}
-{#                    <p class="box-service-price">#}
-{#                        <small>$</small>#}
-{#                        32.#}
-{#                        <small>00</small>#}
-{#                    </p>#}
-{#                </div>#}
-{#                <div class="box-service-text">#}
-{#                    <p>Wąsy są klasycznym wyborem włosów dla mężczyzn i nigdy nie wydają się wychodzić z mody na długo.#}
-{#                        Z nami możesz utrzymywać wąsy w czystości.</p>#}
-{#                </div>#}
-{#                <a class="btn btn-sm box-service-control" href="{% url 'choose_barber' %}">Rezerwuj teraz</a>#}
-{#            </div>#}
-{#        </article>#}
-{#        <article class="box-service">#}
-{#            <div class="box-service-left"><img class="box-service-image"#}
-{#                                               src="{% static 'images/services-4-500x490.png' %}" alt=""#}
-{#                                               width="500" height="490"/>#}
-{#            </div>#}
-{#            <div class="box-service-body">#}
-{#                <div class="box-service-header">#}
-{#                    <p class="box-service-title">Przycinanie wąsów</p>#}
-{#                    <p class="box-service-price">#}
-{#                        <small>$</small>#}
-{#                        35.#}
-{#                        <small>00</small>#}
-{#                    </p>#}
-{#                </div>#}
-{#                <div class="box-service-text">#}
-{#                    <p>Dzisiaj brody wymagają więcej krawiectwa niż w poprzednich dniach. Dlatego uważamy, że nasza#}
-{#                        usługa przycinania brody może być przydatna.</p>#}
-{#                </div>#}
-{#                <a class="btn btn-sm box-service-control" href="{% url 'choose_barber' %}">Rezerwuj teraz</a>#}
-{#            </div>#}
-{#        </article>#}
     </div>
 </section>

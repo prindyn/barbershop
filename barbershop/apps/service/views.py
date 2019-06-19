@@ -2,15 +2,19 @@ from django.shortcuts import render, redirect
 from django.views import View
 from .models import *
 from .forms import ServiceForm
+from django.urls import reverse_lazy
+from barbershop.services import error_response, success_response
+from barbershop.messages import ErrorMessages as error, SuccessMessages as success
 from barbershop.utils import get_calendar, get_day_data
-from django.views.generic import TemplateView, DetailView, CreateView
+from django.views.generic import TemplateView, DetailView, CreateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db import IntegrityError
 
 
 class IndexView(View):
     @classmethod
     def get(cls, request):
-        services = Service.objects.all()
+        services = Service.objects.filter(status=True)
         return render(request, 'frontend/service/index.html', {
             'title': 'Service',
             'services': services
@@ -128,8 +132,26 @@ class EditServiceView(LoginRequiredMixin, DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context.update({
+        service = {
             'id': context['service'].id,
+            'image': context['service'].image,
+            'icon': context['service'].icon,
+        }
+        context.update({
+            'service': service,
             'form': ServiceForm(instance=context['service']),
         })
         return context
+
+
+class DeleteServiceView(LoginRequiredMixin, DeleteView):
+    model = Service
+
+    def delete(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        try:
+            self.object.delete()
+        except IntegrityError as e:
+            return error_response(error.record_remove.format(e))
+
+        return success_response(success.record_delete.format('Wpis został'))

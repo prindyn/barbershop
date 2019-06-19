@@ -22,6 +22,7 @@ class Service(models.Model, ServiceAssistant):
     meta_description = models.CharField(max_length=255, blank=True, verbose_name='Opis SEO')
     description = models.CharField(max_length=255, verbose_name='Opis usługi')
     price = models.FloatField(max_length=10, null=True, verbose_name='Cena usługi')
+    button = models.CharField(max_length=20, verbose_name='Napis na przycisku')
     image = models.ImageField(upload_to='service/image/', blank=True, verbose_name='Zdjecie usługi')
     icon = models.ImageField(upload_to='service/icon/', blank=True, verbose_name='Ikona usługi')
     status = models.BooleanField(default=False, verbose_name='Czy opublikowana usługa')

@@ -18,7 +18,7 @@
     }
 
     function imageFormatter(data) {
-        return '<img src="'+data+'" alt="">';
+        return '<img src="'+data+'" alt="" style="width: 100px">';
     }
 
     function textFormatter(data, obj) {
@@ -74,26 +74,26 @@
                     {
                         field: 'detail.image',
                         title: 'Image',
-                        sortable: true,
+                        sortable: false,
                         formatter: imageFormatter
                     },
                     {
                         field: 'detail.icon',
                         title: 'Icon',
-                        sortable: true,
+                        sortable: false,
                         formatter: imageFormatter
                     },
                     {
-                        field: 'detail.price',
-                        title: 'Price',
+                        field: 'detail.created_date',
+                        title: 'Created',
                         sortable: true
                     },
-                    {
-                        field: 'operate',
-                        title: '',
-                        align: 'center',
-                        formatter: operateFormatter
-                    }
+                    // {
+                    //     field: 'operate',
+                    //     title: '',
+                    //     align: 'center',
+                    //     formatter: operateFormatter
+                    // }
                 ]
             ]
         });

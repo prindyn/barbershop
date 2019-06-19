@@ -11,89 +11,62 @@
 {% block content %}
 
     <div class="padding">
-        <form role="form" action="{% url 'save-service' %}" data-url-success="{% url 'service-list' %}" method="post" enctype="multipart/form-data" novalidate>
+
+        <button data-toggle="modal" data-target="#delete" class="btn danger mb-4">Usuńąć</button>
+
+        <form role="form" action="{% url 'save-service' %}" method="post" enctype="multipart/form-data" novalidate>
 
             {% csrf_token %}
 
-            <input type="hidden" name="id" value="{{ id }}">
+            <input type="hidden" name="id" value="{{ service.id }}">
 
             <div class="form-row">
                 <div class="form-group col-md-6">
 
-                    <div class="form-group js-slug-source">
-                        <label for="inputTitle">Tytuł</label>
+                    {% for field in form %}
 
-                        {{ form.title }}
+                        {% if field == 'image' %}
 
-                    </div>
+                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
 
-                    <div class="form-group js-slug">
-                        <label for="inputSlug">Slug</label>
+                                {% include 'forms/includes/'|add:template_name %}
 
-                        {{ form.slug }}
+                            {% endwith %}
 
-                    </div>
+                        {% elif field == 'icon '%}
 
-                    <div class="form-group">
-                        <label for="inputDescription">Opisanie</label>
+                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
 
-                        {{ form.description }}
+                                {% include 'forms/includes/'|add:template_name %}
 
-                    </div>
+                            {% endwith %}
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="inputPrice">Price</label>
 
-                            {{ form.price }}
 
-                        </div>
-                    </div>
+                        {% else %}
 
-                    <div class="form-row">
+                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
 
-                        <div class="col-6 col-sm-6 col-md-6">
-                            <div class="box-img p-1">
-                                <label for="inputImage">Image</label>
-                                <img id="image" src="" alt="" class="w-100" style="display: none">
-                                <div class="p-2">
-                                    <div class="text-ellipsis">
+                                    {% include 'forms/includes/'|add:template_name %}
 
-                                        {{ form.image }}
+                                {% endwith %}
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endif %}
 
-                        <div class="col-6 col-sm-6 col-md-6">
-                            <div class="box-icon p-1">
-                                <label for="inputIcon">Icon</label>
-                                <img id="icon" src="" alt="" class="w-100" style="display: none">
-                                <div class="p-2">
-                                    <div class="text-ellipsis">
+                    {% endfor %}
 
-                                        {{ form.icon }}
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="form-group">
-                        <label class="md-switch" for="checkboxStatus">
-
-                            {{ form.status }} Wyświetlić na stronie
-
-                        </label>
-                    </div>
                 </div>
             </div>
-            <button type="submit" class="btn primary">Zapisać</button>
+            <button type="submit" value="save-only" class="btn primary">Zapisać</button>
+            <button type="submit" value="save-and-new" data-new-url="{% url 'create-service' %}" class="btn success">Zapisać i dodać nowy</button>
         </form>
     </div>
+
+    {% if service %}
+
+        {% include 'forms/includes/modal.html' %}
+
+    {% endif %}
 
     <script>
 
@@ -114,8 +87,8 @@
         $('form').submit(function(e){
             e.preventDefault();
 
-            var formData = new FormData($(this)[0]);
-
+            var formData = new FormData($(this)[0]),
+                sender = $(document.activeElement);
             $.ajax({
                 url: $(this).attr("action"),
                 method: 'post',
@@ -124,10 +97,19 @@
                 processData: false,
                 success: function(response){
                     if(response.result > 0){
-                        document.location.href = response.url_success;
+                        showSuccessToast(response.message);
+                        if(sender.val() == 'save-and-new') {
+                            setTimeout(function(){
+                                document.location.href = sender.attr('data-new-url');
+                            }, 1000)
+                         } else {
+                             setTimeout(function(){
+                                document.location.href = response.url_success;
+                            }, 1000)
+                         }
                     }
                     if(response.result < 0){
-                        show_error_message(response.message)
+                        show_error_message(response.message);
                     }
                 }
             });
@@ -163,6 +145,28 @@
                 })
             }
         }
+
+        //script for delete one service record
+        var modal = $('div#modal');
+        $('button.js-delete').click(function(){
+            var token = $('input[name="csrfmiddlewaretoken"]').val(),
+                url = $(this).attr('data-url');
+            console.log(url);
+            $.ajax({
+                url: url,
+                method: 'post',
+                data: {'csrfmiddlewaretoken': token},
+                success: function(response){
+                    if(response.result > 0){
+                        showSuccessToast(response.message);
+                        setTimeout(function(){document.location.href = response.url_success}, 1000);
+                    }
+                    else{
+                        showErrorToast(response.message);
+                    }
+                },
+            });
+        });
     </script>
 
 {% endblock %}

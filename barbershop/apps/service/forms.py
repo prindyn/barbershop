@@ -12,7 +12,6 @@ class ServiceForm(forms.ModelForm):
     def clean_slug(self):
         if self.is_valid():
             has_id = 'id' in self.data
-
             new_slug = self.cleaned_data['slug'].lower()
             if not new_slug:
                 new_slug = generate_slug(self.cleaned_data['title'])
@@ -39,6 +38,7 @@ class ServiceForm(forms.ModelForm):
             'meta_description': 'Opis SEO',
             'description': 'Opis',
             'price': 'Cena',
+            'button': 'Napis na przycisku',
             'image': 'Zdjęcie',
             'icon': 'Ikona',
             'status': 'Wyświetlane na stronie',
@@ -77,6 +77,11 @@ class ServiceForm(forms.ModelForm):
                 'id': 'input_price',
                 'placeholder': 'Cena usługi'
             }),
+            'button': forms.TextInput(attrs={
+                'class': 'form-control',
+                'id': 'input_button',
+                'placeholder': 'Napis na przycisku'
+            }),
             'image': forms.FileInput(attrs={
                 'class': 'form-control',
                 'id': 'input_image'
@@ -104,4 +109,7 @@ class ServiceForm(forms.ModelForm):
             'price': {
                 'required': error.field_required.format('"Cena"')
             },
+            'button': {
+                'required': error.field_required.format('"Napis na przycisku"')
+            }
         }

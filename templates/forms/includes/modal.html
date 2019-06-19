@@ -1,0 +1,14 @@
+<div id="delete" class="modal black-overlay show" data-backdrop="false" aria-modal="true" style="display: none; padding-right: 15px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header"><h5 class="modal-title">Potwierdź swoje działania</h5></div>
+            <div class="modal-body text-center p-lg">
+                <p>Czy na pewno chcesz usunąć ten wpis?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn dark-white p-x-md" data-dismiss="modal">Nie</button>
+                <button type="button" data-url="{% url 'delete-service' service.id %}" class="btn danger p-x-md js-delete" data-dismiss="modal">Tak</button>
+            </div>
+        </div>
+    </div>
+</div>
