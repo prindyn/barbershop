@@ -4,6 +4,7 @@ from barbershop.apps.service.forms import ServiceForm
 from barbershop.apps.barber.forms import BarberForm
 from barbershop.apps.service.models import Service
 from barbershop.apps.barber.models import Barber
+from django.urls import reverse_lazy
 
 
 class ServiceListApi(LoginRequiredMixin, ObjectListApiMixin):
@@ -13,7 +14,7 @@ class ServiceListApi(LoginRequiredMixin, ObjectListApiMixin):
 class SaveServiceApi(LoginRequiredMixin, SaveObjectApiMixin):
     model = Service
     form_class = ServiceForm
-    url_success = '/admin/service',
+    url_success = reverse_lazy('service-list')
     files_location = 'media/service/'
 
     def prescribe_data(self, form):
@@ -31,7 +32,7 @@ class SaveServiceApi(LoginRequiredMixin, SaveObjectApiMixin):
 
 class RemoveServiceApi(LoginRequiredMixin, RemoveObjectApiMixin):
     model = Service
-    url_success = '/admin/service'
+    url_success = reverse_lazy('service-list')
 
 
 class BarberListApi(LoginRequiredMixin, ObjectListApiMixin):
@@ -41,7 +42,7 @@ class BarberListApi(LoginRequiredMixin, ObjectListApiMixin):
 class SaveBarberApi(LoginRequiredMixin, SaveObjectApiMixin):
     model = Barber
     form_class = BarberForm
-    url_success = '/admin/barber'
+    url_success = reverse_lazy('barber-list')
     files_location = 'media/barber/'
 
     def prescribe_data(self, form):
@@ -57,4 +58,5 @@ class SaveBarberApi(LoginRequiredMixin, SaveObjectApiMixin):
 
 class RemoveBarberApi(LoginRequiredMixin, RemoveObjectApiMixin):
     model = Barber
-    url_success = '/admin/barber'
+    url_success = reverse_lazy('barber-list')
+

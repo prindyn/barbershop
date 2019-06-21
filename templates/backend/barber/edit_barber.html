@@ -10,57 +10,54 @@
 
 {% block content %}
 
-    <div class="padding">
+    <button data-toggle="modal" data-target="#delete" class="btn danger mb-4">Usuńąć</button>
 
-        <button data-toggle="modal" data-target="#delete" class="btn danger mb-4">Usuńąć</button>
+    <form role="form" action="{% url 'save-barber' %}" method="post" enctype="multipart/form-data" novalidate>
 
-        <form role="form" action="{% url 'save-barber' %}" method="post" enctype="multipart/form-data" novalidate>
+        {% csrf_token %}
 
-            {% csrf_token %}
+        <input type="hidden" name="id" value="{{ barber.id }}">
 
-            <input type="hidden" name="id" value="{{ barber.id }}">
+        <div class="form-row">
+            <div class="form-group col-md-6">
 
-            <div class="form-row">
-                <div class="form-group col-md-6">
+                {% for field in form %}
 
-                    {% for field in form %}
+                    {% if field == 'image' %}
 
-                        {% if field == 'image' %}
+                        {% with template_name=field.name|stringformat:"s"|add:".html" %}
 
-                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
+                            {% include 'forms/includes/'|add:template_name %}
+
+                        {% endwith %}
+
+                    {% elif field == 'icon '%}
+
+                        {% with template_name=field.name|stringformat:"s"|add:".html" %}
+
+                            {% include 'forms/includes/'|add:template_name %}
+
+                        {% endwith %}
+
+
+
+                    {% else %}
+
+                        {% with template_name=field.name|stringformat:"s"|add:".html" %}
 
                                 {% include 'forms/includes/'|add:template_name %}
 
                             {% endwith %}
 
-                        {% elif field == 'icon '%}
+                    {% endif %}
 
-                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
+                {% endfor %}
 
-                                {% include 'forms/includes/'|add:template_name %}
-
-                            {% endwith %}
-
-
-
-                        {% else %}
-
-                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
-
-                                    {% include 'forms/includes/'|add:template_name %}
-
-                                {% endwith %}
-
-                        {% endif %}
-
-                    {% endfor %}
-
-                </div>
             </div>
-            <button type="submit" value="save-only" class="btn primary">Zapisać</button>
-            <button type="submit" value="save-and-new" data-new-url="{% url 'create-barber' %}" class="btn success">Zapisać i dodać nowy</button>
-        </form>
-    </div>
+        </div>
+        <button type="submit" value="save-only" class="btn primary">Zapisać</button>
+        <button type="submit" value="save-and-new" data-new-url="{% url 'create-barber' %}" class="btn success">Zapisać i dodać nowy</button>
+    </form>
 
     {% if barber %}
 

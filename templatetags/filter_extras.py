@@ -22,3 +22,7 @@ def increase(time, n):
     dt += datetime.timedelta(hours=n)
     return dt
 
+
+@register.filter(name='dict_value')
+def dict_value(dict_, k):
+    return dict(dict_[k])

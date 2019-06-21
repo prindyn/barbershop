@@ -1,7 +1,7 @@
 from django.contrib.auth.views import LogoutView
 from barbershop.apps.service.views import *
 from barbershop.apps.barber.views import *
-from django.urls import path
+from django.urls import path, include
 from .views import *
 
 urlpatterns = [
@@ -18,4 +18,6 @@ urlpatterns = [
     path('barber/create/', CreateBarberView.as_view(), name='create-barber'),
     path('barber/<slug:slug>/edit', EditBarberView.as_view(), name='edit-barber'),
     path('barber/<int:pk>/delete', DeleteBarberView.as_view(), name='delete-barber'),
+
+    path('settings/', include('barbershop.apps.setting.urls')),
 ]

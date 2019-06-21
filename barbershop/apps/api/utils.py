@@ -51,7 +51,6 @@ class SaveObjectApiMixin(FormView):
             return error_response(error.uploading_files)
 
         self.obj = self.model() if not has_id else self.model.objects.get(id=self.request.POST['id'])
-
         self.obj = self.prescribe_data(form)
 
         if not has_id or image or icon:

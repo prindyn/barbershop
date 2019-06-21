@@ -7,6 +7,11 @@
     <meta name="description" content="Responsive, Bootstrap, BS4">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
     <link rel="apple-touch-icon" href="{% static 'admin/images/logo.svg' %}">
@@ -17,14 +22,18 @@
     <link rel="stylesheet" href="{% static 'admin/libs/font-awesome/css/font-awesome.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'admin/css/app.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/jquery.toastmessage-min.css' %}">
+    <link rel="stylesheet" href="{% static 'admin/css/style.css' %}">
 
     {% block link %}{% endblock %}
 
 </head>
 <body class="pace-done fixed-content">
 
+    {% include 'backend/includes/ajax_loading.html' %}
+
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+
 
 <div class="app" id="app">
     <div id="aside" class="app-aside fade box-shadow-x nav-expand white dark" aria-hidden="true">
@@ -42,18 +51,22 @@
             {% endblock %}
 
         </div>
+        <div class="padding">
 
-        {% block content %}
+            {% block content %}
 
-            <div class="content-main" id="content-main">
-                <div>
+                <div class="content-main" id="content-main">
+                    <div>
 
-                    {% block greeting %}{% endblock %}
 
-                </div>
-            </div>
+                            {% block greeting %}{% endblock %}
 
-        {% endblock %}
+                        </div>
+                    </div>
+
+            {% endblock %}
+
+        </div>
 
         {% block footer %}
 
@@ -69,6 +82,18 @@
     <script src="{% static 'admin/js/plugins/fullscreen.js' %}"></script>
     <script src="{% static 'js/jquery.toastmessage-min.js' %}"></script>
     <script src="{% static 'js/toastmessage-functions.js' %}"></script>
+
+    <script>
+
+        $(document).ajaxStart(function(){
+            $('.se-pre-con').fadeIn("fast");
+        });
+
+        $(document).ajaxComplete(function(){
+            $('.se-pre-con').fadeOut("fast");
+        });
+
+    </script>
 
     {% block script %}{% endblock %}
 

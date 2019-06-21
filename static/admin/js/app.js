@@ -7599,7 +7599,7 @@ function() {
         target: "body",
         elements: {
             checkInterval: 100,
-            selectors: ["body"]
+            selectors: ["body"],
         },
         eventLag: {
             minSamples: 10,
@@ -9032,9 +9032,9 @@ var MODULE_CONFIG = {
     dropzone: ["/static/admin/libs/dropzone/dist/dropzone.js", "/static/admin/libs/dropzone/dist/dropzone.css"],
     datetimepicker: ["/static/admin/libs/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css", "/static/admin/libs/moment/min/moment-with-locales.min.js", "/static/admin/libs/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js", "/static/admin/js/plugins/datetimepicker.js"],
     datepicker: ["/static/admin/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js", "/static/admin/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"],
-    fullCalendar: ["/static/admin/libs/moment/min/moment-with-locales.min.js", "/static/admin/libs/fullcalendar/dist/fullcalendar.min.js", "/static/admin/libs/fullcalendar/dist/fullcalendar.min.css", "/static/admin/js/plugins/fullcalendar.js"],
+    fullCalendar: ["/static/admin/libs/moment/min/moment-with-locales.js", "/static/admin/libs/fullcalendar/dist/fullcalendar.js", "/static/admin/libs/fullcalendar/dist/fullcalendar.css", "/static/admin/js/plugins/fullcalendar.js"],
     parsley: ["/static/admin/libs/parsleyjs/dist/parsley.js"],
-    select2: ["/static/admin/libs/select2/dist/css/select2.min.css", "/static/admin/libs/select2/dist/js/select2.min.js", "/static/admin/js/plugins/select2.js"],
+    select2: ["/static/admin/libs/select2/dist/css/select2.css", "/static/admin/libs/select2/dist/js/select2.js", "/static/admin/js/plugins/select2.js"],
     summernote: ["/static/admin/libs/summernote/dist/summernote.css", "/static/admin/libs/summernote/dist/summernote-bs4.css", "/static/admin/libs/summernote/dist/summernote.js", "/static/admin/libs/summernote/dist/summernote-bs4.js"],
     vectorMap: ["/static/admin/libs/jqvmap/dist/jqvmap.min.css", "/static/admin/libs/jqvmap/dist/jquery.vmap.js", "/static/admin/libs/jqvmap/dist/maps/jquery.vmap.world.js", "/static/admin/libs/jqvmap/dist/maps/jquery.vmap.usa.js", "/static/admin/libs/jqvmap/dist/maps/jquery.vmap.france.js", "/static/admin/js/plugins/jqvmap.js"],
     waves: ["/static/admin/libs/node-waves/dist/waves.min.css", "/static/admin/libs/node-waves/dist/waves.min.js", "/static/admin/js/plugins/waves.js"]

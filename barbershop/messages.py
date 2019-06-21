@@ -1,6 +1,7 @@
 class ErrorMessages:
 
     uploading_files = u'Wypełnij wszystkie pliki'
+    record_data = u'Błąd podczas zapisywania danych'
     no_objects = u'Nie wybrano żadnych obiektów'
     record_save = u'Nie można zapisać danych: {}'
     record_remove = u'Nie można usunąć danych: {}'

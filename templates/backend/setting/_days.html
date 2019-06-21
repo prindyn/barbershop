@@ -1,0 +1,7 @@
+{% load filter_extras %}
+
+{% for day in week_days %}
+
+    <button class="md-btn md-flat mb-2 {% if week_days|index:day|index:"is_working" %} text-success {% endif %}">{{ day }}</button>
+
+{% endfor %}
