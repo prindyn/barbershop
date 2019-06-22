@@ -37,7 +37,7 @@
           title: event.title,
           content: event_date + event_time + '<div class="d-flex my-2">' + participant + '</div>' + '<div class="text-muted mb-2">'+event.description+'</div>',
           html: true,
-          container: '#fullcalendar',
+          container: '#calendar',
           trigger: 'focus'
       });
       popover.popover('show');
@@ -46,26 +46,26 @@
 
   $(document).on('click', '#dayview', function() {
     popover && popover.popover('dispose');
-    $('#fullcalendar').fullCalendar('changeView', 'agendaDay')
+    $('#calendar').fullCalendar('changeView', 'agendaDay')
   });
 
   $(document).on('click', '#weekview', function() {
     popover && popover.popover('dispose');
-    $('#fullcalendar').fullCalendar('changeView', 'agendaWeek')
+    $('#calendar').fullCalendar('changeView', 'agendaWeek')
   });
 
   $(document).on('click', '#monthview', function() {
     popover && popover.popover('dispose');
-    $('#fullcalendar').fullCalendar('changeView', 'month')
+    $('#calendar').fullCalendar('changeView', 'month')
   });
 
   $(document).on('click', '#todayview', function() {
     popover && popover.popover('dispose');
-    $('#fullcalendar').fullCalendar('today')
+    $('#calendar').fullCalendar('today')
   });
 
   var init = function(){
-    $.ajax('api/fullcalendar.json').done(function(data){
+    $.ajax('api/calendar').done(function(data){
       $.each(data, function(index,item){
         item.start = moment().add(Math.floor((Math.random() * 15) + 1) - index,'d').add(index*3,'h');
         if(index == 0){
@@ -76,10 +76,10 @@
         }
       });
       option.events = data;
-      $('#fullcalendar').fullCalendar(option);
+      $('#calendar').fullCalendar(option);
     });
 
-  }
+  };
 
   // for ajax to init again
   $.fn.fullCalendar.init = init;
