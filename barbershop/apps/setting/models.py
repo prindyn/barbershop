@@ -12,6 +12,18 @@ class CalendarSetting(models.Model):
         return self.title
 
 
+class Status(models.Model):
+    title = models.CharField(max_length=50, verbose_name='Nazwa statusu')
+    number = models.IntegerField(verbose_name='Numer statusu')
+    status_class = models.CharField(max_length=50, verbose_name='Style statusu')
+    text_color = models.CharField(max_length=50, verbose_name='Kolor nadpisu')
+    background_color = models.CharField(max_length=50, verbose_name='Kolor tła')
+    border_color = models.CharField(max_length=50, verbose_name='Kolor ramki')
+
+    def __str__(self):
+        return self.title
+
+
 class BarberDaysSetting(models.Model, BarberDaysSettingAssistants):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

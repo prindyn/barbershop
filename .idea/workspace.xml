@@ -2,12 +2,128 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4926d6fe-6a74-4cff-b53f-ae7cbc89b8eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/barbershop/apps/calendar/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/js/plugins/fullcalendar2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/bootstrap/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/bootstrap/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/bootstrap/main.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/bootstrap/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales-all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales-all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ar-dz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ar-kw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ar-ly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ar-ma.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ar-sa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ar-tn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/en-nz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/es-us.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/fr-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/kk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/lb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/nn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/sr-cyrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/locales/zh-tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/daygrid/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/daygrid/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/daygrid/main.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/daygrid/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/google-calendar/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/google-calendar/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/interaction/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/interaction/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/list/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/list/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/list/main.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/list/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/luxon/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/luxon/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/moment-timezone/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/moment-timezone/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/moment/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/moment/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/rrule/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/rrule/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/timegrid/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/timegrid/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/timegrid/main.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/timegrid/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/forms/includes/event_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/forms/includes/new_event.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/forms/includes/select_end.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/forms/includes/select_service.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/forms/includes/select_start.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/settings/barber/api/fullcalendar.json" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/setting/barber/api/fullcalendar.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/barber/assistants.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/barber/assistants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/calendar/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/calendar/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/service/assistants.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/service/assistants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/setting/barber/api/fullcalendar.json" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/setting/barber/api/fullcalendar.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/setting/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/setting/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/setting/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/setting/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/apps/setting/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/setting/services.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/barbershop/apps/setting/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/setting/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/barbershop/apps/setting/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/apps/setting/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/messages.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/messages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/barbershop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/barbershop/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/admin/js/plugins/fullcalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/plugins/fullcalendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/libs/moment/min/moment-with-locales.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/libs/moment/min/moment-with-locales.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/toastmessage-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/toastmessage-functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/backend/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/backend/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/backend/setting/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/backend/setting/index.html" afterDir="false" />
     </list>
@@ -52,20 +168,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/backend/setting/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/admin/js/plugins/fullcalendar.js">
+        <entry file="file://$PROJECT_DIR$/templates/forms/includes/new_event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+            <state>
+              <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -73,8 +180,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+            <state relative-caret-position="349">
+              <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -86,10 +193,67 @@
         <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+              <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/services.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/barbershop/messages.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/admin/js/plugins/fullcalendar2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="221" column="29" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/barber/api/fullcalendar.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="223" column="3" lean-forward="true" selection-start-line="223" selection-start-column="3" selection-end-line="238" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/backend/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="92" column="4" lean-forward="true" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -99,45 +263,45 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Python Script" />
         <option value="HTML File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>js-slug-source</find>
-      <find>.form-control</find>
-      <find>color: inherit;</find>
-      <find>img</find>
-      <find>data-url-success</find>
-      <find>Calendar</find>
-      <find>BarberDaysSetting</find>
-      <find>DetailView</find>
-      <find>Service</find>
-      <find>Sett</find>
-      <find>barber-se</find>
-      <find>select2</find>
-      <find>blog</find>
-      <find>form</find>
-      <find>dt</find>
-      <find>lg</find>
-      <find>console.log</find>
-      <find>pace-progress</find>
-      <find>e</find>
-      <find>t()</find>
-      <find>pace-activity</find>
-      <find>lds-css</find>
-      <find>ng-scope</find>
-      <find>pace-done</find>
-      <find>ajax:</find>
-      <find>fullcalendar</find>
-      <find>fullCalendar</find>
-      <find>calendar</find>
       <find>url</find>
       <find>#fullcalendar</find>
+      <find>hh</find>
+      <find>mm</find>
+      <find>h:m</find>
+      <find>h:</find>
+      <find>format(&quot;h</find>
+      <find>fc-widget-content</find>
+      <find>h()</find>
+      <find>popover</find>
+      <find>without</find>
+      <find>id=&quot;mb-3&quot;</find>
+      <find>d-flex my-2</find>
+      <find>getEventSo</find>
+      <find>Calendar</find>
+      <find>fullCalendar</find>
+      <find>getEventSourceById</find>
+      <find>fc-icon-chevron-left</find>
+      <find>dayGrid</find>
+      <find>fc-time</find>
+      <find>activ_event</find>
+      <find>console.log</find>
+      <find>id</find>
+      <find>barber-days</find>
+      <find>contains</find>
+      <find>#datetimepicker5</find>
+      <find>select2</find>
+      <find>datetimepicker9</find>
+      <find>select2-single</find>
+      <find>find_by_id</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -156,57 +320,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/barbershop/apps/service/models.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/service/forms.py" />
-        <option value="$PROJECT_DIR$/templates/forms/includes/name.html" />
-        <option value="$PROJECT_DIR$/barbershop/apps/barber/forms.py" />
-        <option value="$PROJECT_DIR$/templates/forms/includes/modal.html" />
-        <option value="$PROJECT_DIR$/barbershop/apps/service/views.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/barber/views.py" />
-        <option value="$PROJECT_DIR$/static/admin/js/plugins/bootstrap-table.js" />
-        <option value="$PROJECT_DIR$/static/admin/js/script.js" />
-        <option value="$PROJECT_DIR$/barbershop/apps/barber/models.py" />
-        <option value="$PROJECT_DIR$/templates/forms/includes/image.html" />
-        <option value="$PROJECT_DIR$/templates/forms/includes/icon.html" />
-        <option value="$PROJECT_DIR$/barbershop/apps/api/services.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/admin/urls.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/setting/forms.py" />
-        <option value="$PROJECT_DIR$/templates/backend/includes/layouts/side_menu_section_1.html" />
-        <option value="$PROJECT_DIR$/templates/backend/barber/barber_list.html" />
-        <option value="$PROJECT_DIR$/templates/backend/barber/create_barber.html" />
-        <option value="$PROJECT_DIR$/templates/backend/barber/edit_barber.html" />
-        <option value="$PROJECT_DIR$/templates/backend/service/create_service.html" />
-        <option value="$PROJECT_DIR$/templates/backend/service/edit_service.html" />
-        <option value="$PROJECT_DIR$/templates/backend/service/service_list.html" />
-        <option value="$PROJECT_DIR$/static/admin/libs/select2/dist/js/select2.js" />
-        <option value="$PROJECT_DIR$/static/admin/js/plugins/select2.js" />
-        <option value="$USER_HOME$/livedemo00.template-help.com/wt_58888_v15/child/intense-barbershop/select2.html" />
-        <option value="$PROJECT_DIR$/barbershop/messages.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/api/urls.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/api/views.py" />
-        <option value="$PROJECT_DIR$/templatetags/filter_extras.py" />
-        <option value="$PROJECT_DIR$/barbershop/utils.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/barbershop/services.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/setting/assistants.py" />
         <option value="$PROJECT_DIR$/templates/backend/setting/_days.html" />
-        <option value="$PROJECT_DIR$/barbershop/apps/barber/assistants.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/setting/models.py" />
         <option value="$PROJECT_DIR$/barbershop/apps/setting/utils.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/setting/services.py" />
         <option value="$PROJECT_DIR$/templates/frontend/base.html" />
         <option value="$PROJECT_DIR$/templates/backend/includes/ajax_loading.html" />
         <option value="$PROJECT_DIR$/static/admin/css/style.css" />
         <option value="$USER_HOME$/flatfull.com/themes/apply/html/calendar.html" />
-        <option value="$PROJECT_DIR$/static/admin/js/app.js" />
         <option value="$PROJECT_DIR$/admin/settings/barber/api/fullcalendar.json" />
         <option value="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/fullcalendar.css" />
         <option value="$PROJECT_DIR$/barbershop/apps/api/utils.py" />
-        <option value="$PROJECT_DIR$/templates/backend/base.html" />
+        <option value="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/interaction.js" />
+        <option value="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/moment.js" />
+        <option value="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/fullcalendar-4.2.0.css" />
+        <option value="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/interaction-4.2.0.js" />
+        <option value="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/moment-4.2.0.js" />
+        <option value="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/fullcalendar-4.2.0.js" />
+        <option value="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/daygrid-4.2.0.js" />
+        <option value="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/daygrid-4.2.0.css" />
+        <option value="$USER_HOME$/flatfull.com/themes/apply/html/ui.modal.html" />
+        <option value="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/fullcalendar.js" />
+        <option value="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/main.js" />
         <option value="$PROJECT_DIR$/static/admin/js/plugins/fullcalendar.js" />
+        <option value="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/moment/main.js" />
+        <option value="$PROJECT_DIR$/templates/forms/includes/event-info.html" />
+        <option value="$PROJECT_DIR$/templates/forms/includes/event_info.html" />
         <option value="$PROJECT_DIR$/barbershop/apps/setting/urls.py" />
-        <option value="$PROJECT_DIR$/barbershop/apps/setting/views.py" />
+        <option value="$USER_HOME$/flatfull.com/themes/apply/html/select2.html" />
+        <option value="$USER_HOME$/flatfull.com/themes/apply/html/form.picker.html" />
+        <option value="$PROJECT_DIR$/static/admin/libs/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.js" />
+        <option value="$PROJECT_DIR$/static/admin/js/plugins/datetimepicker.js" />
+        <option value="$PROJECT_DIR$/barbershop/settings.py" />
+        <option value="$PROJECT_DIR$/templates/forms/includes/select_service.html" />
+        <option value="$PROJECT_DIR$/templates/forms/includes/select_start.html" />
+        <option value="$PROJECT_DIR$/barbershop/apps/calendar/forms.py" />
+        <option value="$PROJECT_DIR$/barbershop/urls.py" />
+        <option value="$PROJECT_DIR$/static/admin/js/app.js" />
+        <option value="$PROJECT_DIR$/templates/forms/includes/select_end.html" />
+        <option value="$PROJECT_DIR$/barbershop/apps/setting/models.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/calendar/models.py" />
         <option value="$PROJECT_DIR$/templates/backend/setting/index.html" />
+        <option value="$PROJECT_DIR$/static/js/toastmessage-functions.js" />
+        <option value="$PROJECT_DIR$/static/admin/js/script.js" />
+        <option value="$PROJECT_DIR$/barbershop/apps/setting/services.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/barber/assistants.py" />
+        <option value="$PROJECT_DIR$/barbershop/apps/service/assistants.py" />
+        <option value="$PROJECT_DIR$/barbershop/messages.py" />
+        <option value="$PROJECT_DIR$/templates/backend/base.html" />
+        <option value="$PROJECT_DIR$/barbershop/apps/setting/barber/api/fullcalendar.json" />
+        <option value="$PROJECT_DIR$/templates/forms/includes/new_event.html" />
+        <option value="$PROJECT_DIR$/barbershop/apps/setting/views.py" />
+        <option value="$PROJECT_DIR$/static/admin/js/plugins/fullcalendar2.js" />
+        <option value="$PROJECT_DIR$/barbershop/apps/setting/forms.py" />
       </list>
     </option>
   </component>
@@ -224,6 +388,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,26 +399,25 @@
             <path>
               <item name="barbershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="barbershop" type="462c0819:PsiDirectoryNode" />
-              <item name="barbershop" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="barbershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="barbershop" type="462c0819:PsiDirectoryNode" />
-              <item name="barbershop" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="barbershop" type="b2602c69:ProjectViewProjectNode" />
               <item name="barbershop" type="462c0819:PsiDirectoryNode" />
-              <item name="barbershop" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="setting" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,7 +425,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -269,11 +433,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/admin/libs/fullcalendar/dist" />
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/static/css" />
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/static/admin/js" />
-      <recent name="$PROJECT_DIR$/media" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/barbershop/apps/setting" />
@@ -358,6 +522,11 @@
       <workItem from="1561092752274" duration="27137000" />
       <workItem from="1561126594842" duration="5925000" />
       <workItem from="1561136088153" duration="10946000" />
+      <workItem from="1561298610219" duration="20761000" />
+      <workItem from="1561375510045" duration="2282000" />
+      <workItem from="1561379093259" duration="24538000" />
+      <workItem from="1561454010343" duration="16955000" />
+      <workItem from="1561538119511" duration="25564000" />
     </task>
     <task id="LOCAL-00001" summary="Save services">
       <created>1560618385212</created>
@@ -394,17 +563,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560976092452</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add full calendar">
+      <created>1561232369112</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561232369113</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="355301000" />
+    <option name="totallyTimeSpent" value="464722000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="-1" width="1286" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19448946" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18395463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" show_stripe_button="false" weight="0.32874617" />
@@ -419,7 +595,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" weight="0.32874617" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008104" side_tool="true" weight="0.33027524" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49918962" weight="0.37003058" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49918962" weight="0.5" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32874617" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -427,30 +603,6 @@
       <window_info anchor="right" id="SciView" order="3" sideWeight="0.49847096" weight="0.3298217" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.50152904" weight="0.2771475" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17017828" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="0" show_stripe_button="false" weight="0.32874617" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32874617" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" weight="0.32874617" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008104" side_tool="true" weight="0.33027524" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49918962" weight="0.45565748" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32874617" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49847096" weight="0.3298217" />
-      <window_info anchor="right" id="Database" order="4" sideWeight="0.50152904" weight="0.2771475" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -461,7 +613,8 @@
     <MESSAGE value="Removing service" />
     <MESSAGE value="Delete service alone" />
     <MESSAGE value="Barber module and refactoring the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Barber module and refactoring the code" />
+    <MESSAGE value="Add full calendar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add full calendar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -475,41 +628,248 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/admin/libs/select2/dist/js/select2.js">
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/fullcalendar-4.2.0 (2)/demos/json.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1234">
+          <caret line="87" column="36" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="87" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/vuetify-material-dashboard-master/src/components/core/Footer.vue" />
+    <entry file="file://$PROJECT_DIR$/templates/forms/includes/modal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/barber/barber_list.html">
+    <entry file="file://$USER_HOME$/flatfull.com/themes/apply/html/ui.modal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="444">
+          <caret line="774" column="22" lean-forward="true" selection-start-line="759" selection-start-column="16" selection-end-line="774" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#23288#23295#1" expanded="true" />
+            <element signature="e#27629#27636#1" expanded="true" />
+            <element signature="e#30201#30208#1" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#16;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#32708#32715#1" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#17;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#36990#36997#1" expanded="true" />
+            <element signature="e#41078#41084#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/livedemo00.template-help.com/wt_58888_v15/child/intense-barbershop/select2.html">
+    <entry file="file://$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/fullcalendar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="659" column="54" selection-start-line="659" selection-start-column="54" selection-end-line="659" selection-end-column="54" />
+        <state relative-caret-position="351">
+          <caret line="5783" column="32" lean-forward="true" selection-start-line="5783" selection-start-column="32" selection-end-line="5783" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#4#10#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/timegrid/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/libs/moment/min/moment-with-locales.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="1" column="144" selection-start-line="1" selection-start-column="144" selection-end-line="1" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/moment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/moment/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="14764" column="5" selection-start-line="14764" selection-start-column="5" selection-end-line="14764" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/core/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="7380" column="8" selection-start-line="7380" selection-start-column="8" selection-end-line="7380" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/daygrid/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="233" column="52" selection-start-line="233" selection-start-column="45" selection-end-line="233" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forms/includes/event_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flatfull.com/themes/apply/html/select2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="924" column="96" lean-forward="true" selection-start-line="924" selection-start-column="28" selection-end-line="924" selection-end-column="96" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#26625#26631#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/libs/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="972" column="31" lean-forward="true" selection-start-line="972" selection-start-column="31" selection-end-line="972" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/libs/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/flatfull.com/themes/apply/html/form.picker.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="703" column="30" selection-start-line="703" selection-start-column="30" selection-end-line="703" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/js/script.js">
+    <entry file="file://$PROJECT_DIR$/templates/forms/includes/name.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="54" />
+        <state relative-caret-position="360">
+          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/js/plugins/select2.js">
+    <entry file="file://$PROJECT_DIR$/barbershop/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="84" column="7" lean-forward="true" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
+        <state relative-caret-position="375">
+          <caret line="28" column="62" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forms/includes/select_end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forms/includes/select_start.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/forms/includes/select_service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9040" column="15" lean-forward="true" selection-start-line="9039" selection-start-column="12" selection-end-line="9040" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/calendar/assistants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/calendar/forms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/calendar/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="148" column="56" lean-forward="true" selection-start-line="148" selection-start-column="56" selection-end-line="148" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backend/service/create_service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backend/setting/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -523,358 +883,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/messages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/site-packages/django/views/generic/list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="138" column="41" lean-forward="true" selection-start-line="138" selection-start-column="41" selection-end-line="138" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="83" column="60" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templatetags/filter_extras.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/assistants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/barber/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/calendar/assistants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/services.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://647f877f-90c6-4598-ad85-64f3ae8b253a/schema/main/table/barber_barber">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="ad979ba0-9917-466d-b84e-94923ac741d5">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/site-packages/django/template/response.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/services.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venv/lib/python3.7/site-packages/django/views/generic/base.py">
+    <entry file="file://$PROJECT_DIR$/static/js/toastmessage-functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="143" column="6" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/assistants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/setting/_days.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/barber/assistants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://647f877f-90c6-4598-ad85-64f3ae8b253a/schema/main/table/setting_barberdayssetting">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="ad979ba0-9917-466d-b84e-94923ac741d5">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/services.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/includes/ajax_loading.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/includes/layouts/header_section_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1125" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/flatfull.com/themes/apply/html/calendar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="652" column="27" lean-forward="true" selection-start-line="652" selection-start-column="27" selection-end-line="652" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#17076#17082#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="9034" column="181" selection-start-line="9034" selection-start-column="173" selection-end-line="9034" selection-end-column="181" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/fullcalendar-4.2.0 (2)/demos/json/events.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/fullcalendar-4.2.0 (2)/demos/js/theme-chooser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/fullcalendar-4.2.0 (2)/demos/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/barber/api/fullcalendar.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/libs/moment/min/moment-with-locales.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-94943" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/fullcalendar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/libs/fullcalendar/dist/fullcalendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="841" column="30" lean-forward="true" selection-start-line="841" selection-start-column="30" selection-end-line="841" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#4#10#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="148" column="56" lean-forward="true" selection-start-line="148" selection-start-column="56" selection-end-line="148" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#79#0" expanded="true" />
-          </folding>
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/barbershop/apps/api/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="240">
+          <caret line="44" column="42" lean-forward="true" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
           <folding>
             <element signature="e#0#82#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/base.html">
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/barber/assistants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="60">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/service/assistants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/admin/js/plugins/fullcalendar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+        <state relative-caret-position="1140">
+          <caret line="76" column="30" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/urls.py">
+    <entry file="file://$PROJECT_DIR$/static/admin/js/plugins/datetimepicker.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/backend/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="424">
+          <caret line="92" column="4" lean-forward="true" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/barber/api/fullcalendar.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="223" column="3" lean-forward="true" selection-start-line="223" selection-start-column="3" selection-end-line="238" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/services.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="62" column="27" selection-start-line="60" selection-start-column="24" selection-end-line="62" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/services.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        <state relative-caret-position="349">
+          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/backend/setting/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/forms/includes/new_event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/js/plugins/fullcalendar2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="221" column="29" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/messages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbershop/apps/setting/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

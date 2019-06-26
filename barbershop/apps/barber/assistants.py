@@ -6,7 +6,7 @@ class BarberAssistant:
     self_ = None
 
     def find_by_id(self, pk):
-        return self.instance_.objects.get(id=pk)
+        return self.instance_.objects.filter(id=pk).first()
 
     def find_by_title(self, title):
         return self.instance_.objects.filter(title__iexact=title)

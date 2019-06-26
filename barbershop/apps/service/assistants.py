@@ -9,7 +9,7 @@ class ServiceAssistant:
         return True if self.self_.id else False
 
     def find_by_id(self, pk):
-        return self.instance_.objects.filter(id=pk)
+        return self.instance_.objects.filter(id=pk).first()
 
     def find_by_title(self, title):
         return self.instance_.objects.filter(title__iexact=title)

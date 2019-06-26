@@ -21,7 +21,7 @@ $(window).on('load', function () {
                 if (response.result > 0) {
                     showSuccessToast(response.message);
                 } else {
-                    showErrorToast(response.message);
+                    show_error_message(response.message);
                 }
             }
         });
@@ -86,22 +86,6 @@ $(window).on('load', function () {
         $('.js-slug').find('input').val(generate_slug($(this).val()));
     });
 
-//functions to show service save errors
-    function show_error_message(data) {
-        if (typeof data == 'string' || data instanceof String) {
-            showErrorToast(data);
-        } else {
-            var first = true;
-            $.each(data, function (k, v) {
-                showErrorToast(v[0]);
-                first = false;
-                if (first === false) {
-                    return false
-                }
-            })
-        }
-    }
-
 
 ////////////////////////////////////////////
 
@@ -122,7 +106,7 @@ $(window).on('load', function () {
                         document.location.href = response.url_success
                     }, 1000);
                 } else {
-                    showErrorToast(response.message);
+                    show_error_message(response.message);
                 }
             },
         });

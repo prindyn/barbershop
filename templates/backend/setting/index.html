@@ -4,7 +4,17 @@
 
 {% block link %}
 
+    <link rel="stylesheet" href="{% static 'admin/libs/fullcalendar/dist/core/main.css' %}">
+    <link rel="stylesheet" href="{% static 'admin/libs/fullcalendar/dist/daygrid/main.css' %}">
+    <link rel="stylesheet" href="{% static 'admin/libs/fullcalendar/dist/timegrid/main.css' %}">
 
+    {{ form.media.css }}
+
+    <script src="{% static 'admin/libs/fullcalendar/dist/moment/main.js' %}"></script>
+    <script src="{% static 'admin/libs/fullcalendar/dist/core/main.js' %}"></script>
+    <script src="{% static 'admin/libs/fullcalendar/dist/daygrid/main.js' %}"></script>
+    <script src="{% static 'admin/libs/fullcalendar/dist/timegrid/main.js' %}"></script>
+    <script src="{% static 'admin/libs/fullcalendar/dist/interaction/main.js' %}"></script>
 
 {% endblock %}
 
@@ -13,22 +23,22 @@
     <div class="form-row">
 
         {% csrf_token %}
-        <div id="data" data-url-set="{% url 'set-barber-working-day' %}" data-url-get="{% url 'get-barber-days' %}"></div>
+
+        <div id="data" data-url-create-event="{% url 'create-event' %}" data-url-calendar="{% url 'barber-calendar' %}" data-url-set="{% url 'set-barber-working-day' %}" data-url-get="{% url 'get-barber-days' %}"></div>
+
+    {% for field in select_barber %}
 
         <div class="col-md-4">
             <div class="form-group">
-                <label>Wybierz fryzjera</label>
-                <select id="select2-single" data-plugin="select2" class="form-control">
+                <label>{{ field.label }}</label>
 
-                    {% for barber in barbers %}
+                {{ field }}
 
-                        <option value="{{ barber.id }}">{{ barber }}</option>
-
-                    {% endfor %}
-
-                </select>
             </div>
         </div>
+
+    {% endfor %}
+
         <div class="col-md-8">
             <label>Wybierz dni robocze fryzjera</label>
             <div id="barber-days">
@@ -44,91 +54,26 @@
     </div>
     <div class="form-row">
         <div class="d-flex mb-3 col-sm-12 col-md-12">
-            <button type="button" class="btn btn-sm white" id="todayview">today</button>
+            <button type="button" class="btn btn-sm white" id="todayview">dzisiaj</button>
             <div class="btn-group ml-auto">
-                <button class="btn btn-sm white" id="dayview">Day</button>
-                <button class="btn btn-sm white" id="weekview">Week</button>
-                <button class="btn btn-sm white" id="monthview">Month</button>
+                <button class="btn btn-sm white" id="monthview">Miesiąc</button>
+                <button class="btn btn-sm white" id="weekview">Tydzień</button>
+                <button class="btn btn-sm white" id="dayview">Dzień</button>
             </div>
         </div>
-        <div id="calendar" data-plugin="fullCalendar"></div>
+
+        <div id="calendar"></div>
     </div>
+
+    {% include 'forms/includes/event_info.html' %}
+    {% include 'forms/includes/new_event.html' %}
 
 {% endblock %}
 
 {% block script %}
 
-    <script>
+    {{ form.media.js }}
 
-        function set_day_active(btn){
-            btn.addClass('text-success');
-        }
-        function set_day_not_active(btn){
-            btn.removeClass('text-success');
-        }
-
-        var url_set = $('div#data').attr('data-url-set'),
-            button = $('button.md-btn'),
-            token = $('input[name="csrfmiddlewaretoken"]').val(),
-            select = $('#select2-single'),
-            data = [];
-        $('#barber-days').on('click', button, function(){
-            var active_btn = $(document.activeElement),
-                barber = $('span#select2-select2-single-container');
-            data = {
-                barber_id: $('#select2-single option:contains('+barber.text()+')').val(),
-                barber: barber.text(),
-                day: active_btn.text()
-            };
-            data = JSON.stringify(data);
-            $.ajax({
-                url: url_set,
-                method: 'POST',
-                data: {'csrfmiddlewaretoken': token, 'data': data},
-                success: function(response){
-                    if(response.result > 0){
-                        data = [];
-                        if(response.exacted == true){
-                            set_day_not_active(active_btn)
-                        }
-                        else {
-                            set_day_active(active_btn);
-                        }
-                    }
-                    else{
-                        data = [];
-                        showErrorToast(response.message);
-                    }
-                },
-                error:function (error) {
-                    data = [];
-                    console.log(error);
-                }
-            });
-        });
-
-        function change_barber_days(data){
-            $('#barber-days').html(data);
-        }
-
-        $('#select2-single').on('select2:select', function (e) {
-
-            var url_get = $('div#data').attr('data-url-get'),
-                data = {'barber': e.params.data.text, 'barber_id': e.params.data.id};
-                data = JSON.stringify(data);
-            $.ajax({
-                url: url_get,
-                method: 'POST',
-                data: {'csrfmiddlewaretoken': token, 'data': data},
-                success: function (response) {
-                    change_barber_days(response);
-                },
-                error: function (error) {
-                    console.log(error);
-                }
-            });
-        });
-
-    </script>
+    <script src="{% static 'admin/js/plugins/fullcalendar2.js' %}"></script>
 
 {% endblock %}

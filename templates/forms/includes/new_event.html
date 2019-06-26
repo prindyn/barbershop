@@ -1,0 +1,41 @@
+<div id="new-event" class="modal" data-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" aria-label="Close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <form style="width:100%;" novalidate>
+                <div class="modal-body p-lg form-row">
+
+                    {% csrf_token %}
+
+                    {% for field in form %}
+
+                        {% if field.name == 'barber' or field.name == 'date' %}
+
+                            {{ field }}
+
+                        {% else %}
+
+                            {% with template_name=field.name|stringformat:"s"|add:".html" %}
+
+                                {% include 'forms/includes/select_'|add:template_name %}
+
+                            {% endwith %}
+
+                        {% endif %}
+
+                    {% endfor %}
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" id="add-event" class="md-btn md-raised mb-2 w-xs blue" >Zapisać</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

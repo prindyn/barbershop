@@ -1,3 +1,17 @@
+function show_error_message(data) {
+    if (typeof data == 'string' || data instanceof String) {
+        showErrorToast(data);
+    } else {
+        var first = true;
+        $.each(data, function (k, v) {
+            showErrorToast(v[0]);
+            first = false;
+            if (first === false) {
+                return false
+            }
+        })
+    }
+}
 function showSuccessToast(text) {
     $().toastmessage('showSuccessToast', text);
 }

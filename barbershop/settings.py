@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'barbershop.apps.shop',
     'barbershop.apps.user',
 
+    'django_select2',
+    'tempus_dominus',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

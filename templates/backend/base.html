@@ -81,17 +81,17 @@
     <script src="{% static 'js/jquery.toastmessage-min.js' %}"></script>
     <script src="{% static 'js/toastmessage-functions.js' %}"></script>
 
-    <script>
-
-        $(document).ajaxStart(function(){
-            $('.se-pre-con').fadeIn("fast");
-        });
-
-        $(document).ajaxComplete(function(){
-            $('.se-pre-con').fadeOut("fast");
-        });
-
-    </script>
+{#    <script>#}
+{##}
+{#        $(document).ajaxStart(function(){#}
+{#            $('.se-pre-con').fadeIn("fast");#}
+{#        });#}
+{##}
+{#        $(document).ajaxComplete(function(){#}
+{#            $('.se-pre-con').fadeOut("fast");#}
+{#        });#}
+{##}
+{#    </script>#}
 
     {% block script %}{% endblock %}
 

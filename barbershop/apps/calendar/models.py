@@ -29,13 +29,26 @@ class Time(models.Model):
         return str(self.hour)
 
 
-class ReservationDate(models.Model):
-    date = models.DateTimeField(verbose_name='Data rezerwacji')
-    barber = models.ForeignKey('barber.Barber', on_delete=models.CASCADE, verbose_name='Fryzjer, ktorego dotyczy data')
-    client = models.ForeignKey('user.Client', on_delete=models.CASCADE, verbose_name='Klient, ktorego dotyczy data')
-    confirmed = models.BooleanField(default=True, verbose_name='Czy rezerwacja została potwierdzona')
-    created_date = models.DateTimeField(auto_now_add=True, verbose_name='Data utworzenia')
-    updated_date = models.DateTimeField(auto_now=True, verbose_name='Data zmiany')
+# class ReservationDate(models.Model):
+#     date = models.DateTimeField(verbose_name='Data rezerwacji')
+#     barber = models.ForeignKey('barber.Barber', on_delete=models.CASCADE, verbose_name='Fryzjer, ktorego dotyczy data')
+#     client = models.ForeignKey('user.Client', on_delete=models.CASCADE, verbose_name='Klient, ktorego dotyczy data')
+#     confirmed = models.BooleanField(default=True, verbose_name='Czy rezerwacja została potwierdzona')
+#     created_date = models.DateTimeField(auto_now_add=True, verbose_name='Data utworzenia')
+#     updated_date = models.DateTimeField(auto_now=True, verbose_name='Data zmiany')
+#
+#     def __str__(self):
+#         return str(self.date)
+
+
+class Calendar(models.Model):
+    title = models.CharField(max_length=255, verbose_name='Nazwa wydarzenia')
+    comment = models.CharField(max_length=255, verbose_name='Komentarz klienta')
+    start = models.TimeField(verbose_name='Początek wydarzenia')
+    end = models.TimeField(verbose_name='Koniec wydarzenia')
+    status = models.ForeignKey('setting.Status', on_delete=models.CASCADE, verbose_name='Status wydarzenia')
+    barber = models.ForeignKey('barber.Barber', on_delete=models.CASCADE, verbose_name='Fryzjer, ktorego dotyczy wydarzenie')
+    service = models.ForeignKey('service.Service', on_delete=models.CASCADE, verbose_name='Usluga, ktorej dotyczy wydarzenie')
 
     def __str__(self):
-        return str(self.date)
+        return str(self.title)

@@ -9,6 +9,10 @@ class ErrorMessages:
     field_unique = u'{} już istnieje'
     forbidden_slug = u'Korzystanie z tego slagu: "{}" jest zabronione'
     invalid_format = u'Nieprawidłowy format {}'
+    create_event = u'Błąd podczas tworzenia zdarzenia',
+    barber_not_found = u'Nie wybrano fryzjera'
+    service_not_found = u'Nie wybrano usługe'
+    wrong_time = u'Czas zakończenia nie może być wcześniejszy niż czas rozpoczęcia'
 
     def __setitem__(self, key, value):
         self[key] = value
@@ -21,6 +25,7 @@ class SuccessMessages:
 
     record_save = u'Dane zostały pomyślnie zapisane'
     record_delete = u'{} pomyślnie usunięte'
+    event_created = u'Wydarzenie zostało pomyślnie zarejestrowane'
 
     def __setitem__(self, key, value):
         self[key] = value
