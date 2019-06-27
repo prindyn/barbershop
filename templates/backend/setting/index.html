@@ -24,7 +24,7 @@
 
         {% csrf_token %}
 
-        <div id="data" data-url-create-event="{% url 'create-event' %}" data-url-calendar="{% url 'barber-calendar' %}" data-url-set="{% url 'set-barber-working-day' %}" data-url-get="{% url 'get-barber-days' %}"></div>
+        <div id="data" data-url-remove-event="{% url 'remove-event' %}" data-url-create-event="{% url 'create-event' %}" data-url-calendar="{% url 'barber-calendar' %}" data-url-set="{% url 'set-barber-working-day' %}" data-url-get="{% url 'get-barber-days' %}"></div>
 
     {% for field in select_barber %}
 

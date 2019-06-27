@@ -23,7 +23,9 @@ class CreateEventForm(forms.Form):
     })
     date = forms.CharField(widget=forms.HiddenInput(attrs={
         'id': 'event_date'
-    }))
+    }), error_messages={
+        'required': error.wrong_date
+    })
     start = forms.TimeField(widget=TimePicker(attrs={
         'id': 'event_start',
         'placeholder': 'Początek',

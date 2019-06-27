@@ -4,6 +4,7 @@ class ErrorMessages:
     record_data = u'Błąd podczas zapisywania danych'
     no_objects = u'Nie wybrano żadnych obiektów'
     record_save = u'Nie można zapisać danych: {}'
+    event_remove = u'Błąd usuwania wydarzenia'
     record_remove = u'Nie można usunąć danych: {}'
     field_required = u'Pole {} nie może być puste'
     field_unique = u'{} już istnieje'
@@ -13,6 +14,7 @@ class ErrorMessages:
     barber_not_found = u'Nie wybrano fryzjera'
     service_not_found = u'Nie wybrano usługe'
     wrong_time = u'Czas zakończenia nie może być wcześniejszy niż czas rozpoczęcia'
+    wrong_date = u'Nie wybrano daty'
 
     def __setitem__(self, key, value):
         self[key] = value
@@ -24,7 +26,7 @@ class ErrorMessages:
 class SuccessMessages:
 
     record_save = u'Dane zostały pomyślnie zapisane'
-    record_delete = u'{} pomyślnie usunięte'
+    record_delete = u'{} pomyślnie usunięto'
     event_created = u'Wydarzenie zostało pomyślnie zarejestrowane'
 
     def __setitem__(self, key, value):

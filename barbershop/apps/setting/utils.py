@@ -16,8 +16,8 @@ class SetDayForBarberApiMixin(View):
             return error_response(error.record_data)
         barber = Barber().find_by_id(data['barber_id'])
 
-        if barber.has_barber_this_day(data['day']):
-            day = barber.get_barber_day(data['day'])
+        if barber.has_this_title_day(data['day']):
+            day = barber.get_day_setting(data['day'])
             day.is_working = False if day.is_working else True
         else:
             data_day = prepare_writing_data(data['day'])
@@ -41,7 +41,7 @@ class GetDaysForBarberApiMixin(View):
         json_data = request.POST.get('data')
         data = json.loads(json_data)
         barber = Barber().find_by_id(data['barber_id'])
-        days = barber.days.all()
+        days = barber.barberdayssetting_set.all()
         week_days = days_merge(days).merge()
 
         return render_to_response(self.template_name, context={'week_days': week_days})

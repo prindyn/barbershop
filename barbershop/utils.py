@@ -1,30 +1,23 @@
-from googletrans import Translator
 import datetime
 
 
-def get_day_data(day=None, date=None, language=None):
+def get_day_data(date=None, reverse=None):
     if date:
-        if type(date) == 'str':
-            day, month, year = (int(x) for x in date.split('-'))
+        if type(date) == str:
+            date = date.split('-')
+            date.reverse() if reverse else date
+            day, month, year = (int(x) for x in date)
             date = datetime.date(year, month, day)
         else:
             date = date
     else:
         date = datetime.date.today()
 
-    day, day_shortcut, month, month_day_nr = (date.strftime('%' + x) for x in ['A', 'a', 'B', 'd'])
+    day, shortcut, month, month_day_nr, year = (date.strftime('%' + x) for x in ['A', 'a', 'B', 'd', 'Y'])
     week_day_nr = date.weekday()
 
-
-
-
-    # if language:
-    #     translator = Translator()
-    #     day, day_shortcut, month, month_day_nr, week_day_nr = (translator.translate(str(x), dest=language).text for x in
-    #                                                            [day, day_shortcut, month, month_day_nr, week_day_nr])
-
-    data = {'title': day, 'shortcut': day_shortcut, 'month': month, 'month_day_nr': month_day_nr,
-            'week_day_nr': week_day_nr}
+    data = {'title': day, 'shortcut': shortcut, 'month': month, 'month_day_nr': int(month_day_nr),
+            'week_day_nr': int(week_day_nr), 'year': int(year), 'date': date}
     return data
 
 
